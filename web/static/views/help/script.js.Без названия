@@ -1,0 +1,7 @@
+bindPage({
+    notification: "mainPage"
+})
+
+document.querySelector("#submit_syka").addEventListener("click", () => {
+    toNextStage("transfer")
+})

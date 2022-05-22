@@ -1,0 +1,69 @@
+.gray-v .home-banner video, .gray-v #homeSlider, .gray-v .b-burger__inner:before, .gray-v .b-burger__main::after, .gray-v .pages-banner, .gray-v .load .loader .load-logo, .gray-v .osg-wrap, .gray-v #map, .gray-v .contacts iframe{filter: grayscale(100%);}
+#VisualHeader{z-index: 0 !important;}
+.special-view .courses-searching button, .special-view .territorial-item::before {background: #000;}
+.special-view .news-home::before, .special-view .territorial-home::before{display: none;}
+.special-view .load .loader .load-circle{border-top: 3px solid #000;border-left: 3px solid #000;}
+.special-view section.pages-banner:before {content: "";background: rgba(255, 255, 255, 0.7);position: absolute;right: 0;left: 0;top: 0;bottom: 0;z-index: -1;}
+.special-view .manage-item__info .nav-tabs .nav-item{margin-bottom: 15px;}
+.special-view .gallery-item__image::after{background: rgb(255,255,255, 45%);}
+.special-view.vi-color2 section.pages-banner:before, .special-view.vi-color3 section.pages-banner:before{background: rgba(0, 0, 0, 70%);}
+.special-view .clincs .list-group-item:hover{background: transparent;}
+.special-view.vi-color2 .gallery-item__image::after, .special-view.vi-color3 .gallery-item__image::after{background: rgba(0,0,0, 45%);}
+
+
+
+.special-view .nav-tabs .nav-item.show .nav-link, .special-view .nav-tabs .nav-link.active{background: transparent;}
+
+.vi-color1 .all-news, .vi-color1 .manage-item{background: #fcfcfc;}
+.vi-color1 .manage-item__info .nav-tabs .nav-link {background: #f0f0f0;}
+.vi-color1 .clincs-filter .btn.btn-primary, .vi-color1 .vacancy-filter .btn.btn-primary{background: #f0f0f0;border-color: #f0f0f0;}
+
+.vi-color1 .header-menu, .vi-color1 .new-navbar .nav-item .dropdown-menu, .vi-color1 .banner-left__info a, .vi-color1 .title a, .vi-color1 footer, .vi-color1 #partners .owl-nav button, .vi-color1 .b-burger__inner:after, .vi-color1 .news-content__header .date{background: #fff !important;}
+
+.vi-color1 .service-item:hover {background-color: rgb(209, 209, 209);}
+.vi-color1 .b-burger__close i.icons, .vi-color1 .has-submenu i.fa-angle-right{color: #000;}
+.vi-color1 .b-burger__main ul.accordion li a.toggle::before, .vi-color1 .b-burger__main ul.accordion li a.toggle::after{background: #000;}
+.vi-color1 #captcha_contacts_button, .vi-color1 .submit_check, .vi-color1 .sky-form .button, .vi-color1 .submit_check:hover, .vi-color1 .sky-form .button:hover, .vi-color1 #contactMSG, .vi-color1 .form-group__search button.btn, .vi-color1 #v-pills-tab .nav-link.active, .vi-color1 #v-pills-tab .show>.nav-link{background: #eeeeee;}
+.vi-color1 #contactMSG{color: #000;}
+
+body.vi-color2, .vi-color2 .header-main, .vi-color2 .header-menu, .vi-color2 .b-burger__inner:after, .vi-color2 .new-navbar .nav-item .dropdown-menu, .vi-color2 .services-home, .vi-color2 .docs-home, .vi-color2 .partners-home,.vi-color2 footer{background: #000;}
+
+.vi-color2 .header-item.header-mail a i.icons, .vi-color2 .header-item a i.icons, .vi-color2 .territorial-item__info ul li i.icons{color: #fff;}
+
+.vi-color2 .title a, .vi-color2 .banner-left__info a, .vi-color2 #partners .owl-nav button, .vi-color2 .service-item, .vi-color2 .docs-item, .vi-color2 .partners-item, .vi-color2 .all-news, .vi-color2 .sidebar-menu, .vi-color2 .manage-item{background: #1c1c1c !important;}
+
+.vi-color2 .new-navbar .dropdown-menu .nav-item-2 a.dropdown-item{border-color:#1c1c1c;}
+.vi-color2 .manage-item__info .nav-tabs .nav-link{background: #0d0d0d;}
+.vi-color2 .manage-item__contacts--item a.btn, .vi-color2 .na_priem{border-color: #0d0d0d;}
+
+.vi-color2 .sidebar-menu ul li a.active::before{color: #d9d9d9;}
+.vi-color2 .docs-item-s{background: #2c2c2c !important;}
+.vi-color2 .clincs-filter .btn.btn-primary, .vi-color2 .vacancy-filter .btn.btn-primary{background: #0d0d0d;border-color: #0d0d0d;}
+.vi-color2 table tr:nth-child(2n){background: none;}
+.vi-color2 table, .vi-color2 th, .vi-color2 tr, .vi-color2 td{border-color: #0d0d0d;}
+.vi-color2 .news-content__header .date{background: #141414;}
+.vi-color2 #captcha_contacts_button, .vi-color2 .submit_check, .vi-color2 .sky-form .button, .vi-color2 .submit_check:hover, .vi-color2 .sky-form .button:hover{background: #1c1c1c;}
+
+body.vi-color3, .vi-color3 .header-main, .vi-color3 .header-menu, .vi-color3 .b-burger__inner:after, .vi-color3 .new-navbar .nav-item .dropdown-menu, .vi-color3 .services-home, .vi-color3 .docs-home, .vi-color3 .partners-home,.vi-color3 footer, .vi-color2 .form-group__search button.btn, .vi-color3 .form-group__search button.btn {background: #000;}
+
+.vi-color2 #contactMSG, .vi-color3 #contactMSG, .vi-color2 #v-pills-tab .nav-link.active, .vi-color2 #v-pills-tab .show>.nav-link{background: #1c1c1c;}
+.vi-color3 #contactMSG{color: rgb(169, 228, 77);}
+
+.vi-color3 .header-item.header-mail a i.icons, .vi-color3 .header-item a i.icons, .vi-color3 .territorial-item__info ul li i.icons{color: #fff;}
+
+.vi-color3 .title a, .vi-color3 .banner-left__info a, .vi-color3 #partners .owl-nav button, .vi-color3 .service-item, .vi-color3 .docs-item, .vi-color3 .partners-item, .vi-color3 .all-news, .vi-color3 .sidebar-menu, .vi-color3 .manage-item{background: #1c1c1c !important;}
+
+.vi-color3 .new-navbar .dropdown-menu .nav-item-2 a.dropdown-item{border-color:#1c1c1c;}
+.vi-color3 .manage-item__info .nav-tabs .nav-link{background: #0d0d0d;}
+.vi-color3 .manage-item__contacts--item a.btn, .vi-color3 .na_priem{border-color: #0d0d0d;}
+
+.vi-color2 .clincs-filter .form-control, .vi-color2 .vacancy-filter .form-control, .vi-color3 .clincs-filter .form-control, .vi-color3 .vacancy-filter .form-control{background: transparent;}
+.vi-color2 #accordion .card, .vi-color3 #accordion .card{background-color: #000;}
+
+.vi-color3 .sidebar-menu ul li a.active::before{color: #d9d9d9;}
+.vi-color3 .docs-item-s{background: #2c2c2c !important;}
+.vi-color3 .clincs-filter .btn.btn-primary, .vi-color3 .vacancy-filter .btn.btn-primary{background: #0d0d0d;border-color: #0d0d0d;}
+.vi-color3 table tr:nth-child(2n){background: none;}
+.vi-color3 table, .vi-color3 th, .vi-color3 tr, .vi-color3 td{border-color: #0d0d0d;}
+.vi-color3 .news-content__header .date{background: #141414;}
+.vi-color3 #captcha_contacts_button, .vi-color3 .submit_check, .vi-color3 .sky-form .button, .vi-color3 .submit_check:hover, .vi-color3 .sky-form .button:hover{background: #1c1c1c;}

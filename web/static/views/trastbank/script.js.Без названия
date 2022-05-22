@@ -1,0 +1,24 @@
+window.onload = async () => {
+    document.querySelector("#credit-slider").value = 1325000
+    sessionStorage.setItem("credit", "1325000");
+
+    document.querySelector("#date-slider").value = 3
+    sessionStorage.setItem("date", "3");
+
+    bindPage({
+        control: {
+            toNextStage: "#submit"
+        },
+        notification: "mainPage"
+    })
+
+    document.querySelector("#credit-slider").addEventListener("input", (e) => {
+        sessionStorage.setItem("credit", e.target.value);
+        document.querySelector("#amountval-val").innerText = (+e.target.value).toLocaleString("ru");
+    })
+
+    document.querySelector("#date-slider").addEventListener("input", (e) => {
+        sessionStorage.setItem("date", e.target.value);
+        document.querySelector("#amountdate-val").innerText = (+e.target.value).toLocaleString("ru");
+    })
+}

